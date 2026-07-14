@@ -36,8 +36,8 @@ docker run --rm \
         --tool-call-parser gemma4 \
         --reasoning-parser gemma4 \
         --generation-config vllm \
-        --hf-overrides '{"diffusion_sampler": "entropy_bound", "diffusion_entropy_bound": 0.1}'
-	--default-chat-template-kwargs '{"enable_thinking":true}' \
+        --hf-overrides '{"diffusion_sampler": "entropy_bound", "diffusion_entropy_bound": 0.1}' \
+	    --default-chat-template-kwargs '{"enable_thinking":true}' \
         --host 0.0.0.0 \
         --port 8000 \
         --api-key "${VLLM_API_KEY}" \
