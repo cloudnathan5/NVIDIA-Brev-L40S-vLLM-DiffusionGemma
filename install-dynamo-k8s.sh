@@ -2,7 +2,7 @@
 set -euo pipefail
 
 GPU_OPERATOR_VERSION="${GPU_OPERATOR_VERSION:-v26.3.3}"
-DYNAMO_PLATFORM_VERSION="${DYNAMO_PLATFORM_VERSION:-1.0.2}"
+DYNAMO_PLATFORM_VERSION="${DYNAMO_PLATFORM_VERSION:-1.2.1}"
 DYNAMO_NAMESPACE="${DYNAMO_NAMESPACE:-dynamo-system}"
 GPU_OPERATOR_NAMESPACE="${GPU_OPERATOR_NAMESPACE:-gpu-operator}"
 
@@ -49,9 +49,18 @@ fi
 
 helm "${gpu_operator_args[@]}"
 
+dynamo_chart_dir="$(mktemp -d)"
+cleanup() {
+  rm -rf -- "$dynamo_chart_dir"
+}
+trap cleanup EXIT
+
+helm pull \
+  "https://helm.ngc.nvidia.com/nvidia/ai-dynamo/charts/dynamo-platform-${DYNAMO_PLATFORM_VERSION}.tgz" \
+  --destination "$dynamo_chart_dir"
+
 helm upgrade --install dynamo-platform \
-  oci://helm.ngc.nvidia.com/nvidia/ai-dynamo/charts/dynamo-platform \
-  --version "$DYNAMO_PLATFORM_VERSION" \
+  "$dynamo_chart_dir/dynamo-platform-${DYNAMO_PLATFORM_VERSION}.tgz" \
   --namespace "$DYNAMO_NAMESPACE" \
   --create-namespace \
   --wait \
