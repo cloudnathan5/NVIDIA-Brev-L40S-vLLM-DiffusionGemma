@@ -210,12 +210,78 @@ def plot_comparison(rows):
     plt.close(figure)
 
 
+def plot_vllm_model_comparison(rows):
+    models = ("Gemma 4", "DiffusionGemma")
+    colors = {"Gemma 4": "#35618C", "DiffusionGemma": "#2A9D8F"}
+    concurrencies = (1, 5)
+    x_positions = np.arange(len(concurrencies))
+    width = 0.34
+
+    figure, axis = plt.subplots(figsize=(10, 6.5))
+    for model_index, model in enumerate(models):
+        values = [
+            lookup(
+                rows,
+                model,
+                "vLLM",
+                concurrency,
+                "output_token_throughput",
+            )
+            for concurrency in concurrencies
+        ]
+        offset = (-0.5 if model_index == 0 else 0.5) * width
+        bars = axis.bar(
+            x_positions + offset,
+            values,
+            width,
+            label=model,
+            color=colors[model],
+            edgecolor="white",
+        )
+        add_value_labels(axis, bars)
+
+    axis.set_xticks(x_positions, ["Concurrency 1", "Concurrency 5"])
+    axis.set_ylabel("Output tokens/sec")
+    axis.grid(axis="y")
+    axis.grid(axis="x", visible=False)
+    axis.spines["top"].set_visible(False)
+    axis.spines["right"].set_visible(False)
+    axis.margins(y=0.17)
+
+    figure.suptitle(
+        "Regular vLLM: Gemma 4 vs DiffusionGemma",
+        fontsize=18,
+        fontweight="bold",
+        y=0.97,
+    )
+    figure.legend(
+        loc="upper center",
+        bbox_to_anchor=(0.5, 0.9),
+        frameon=False,
+        ncol=2,
+    )
+    figure.text(
+        0.5,
+        0.025,
+        "1x L40S per run | AIPerf 0.11.0 | 10 requests | "
+        "550-token inputs | reasoning enabled | seed 42",
+        ha="center",
+        color="#555555",
+        fontsize=9,
+    )
+    figure.subplots_adjust(left=0.1, right=0.98, top=0.82, bottom=0.13)
+    figure.savefig(GRAPH_DIR / "vllm-model-throughput.png", dpi=180)
+    figure.savefig(GRAPH_DIR / "vllm-model-throughput.svg")
+    plt.close(figure)
+
+
 def main():
     GRAPH_DIR.mkdir(parents=True, exist_ok=True)
     rows = load_runs()
     write_summary_csv(rows)
     write_summary_markdown(rows)
     plot_comparison(rows)
+    plot_vllm_model_comparison(rows)
     print(f"Wrote benchmark summary and graphs to {ARTIFACT_ROOT}")
 
 

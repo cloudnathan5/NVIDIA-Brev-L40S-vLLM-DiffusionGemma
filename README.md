@@ -87,6 +87,10 @@ underlying values in
 
 ![Regular vLLM versus Dynamo throughput](benchmarking/artifacts/graphs/throughput-comparison.png)
 
+For a model-only comparison using regular vLLM on one L40S per run:
+
+![Gemma 4 versus DiffusionGemma regular vLLM throughput](benchmarking/artifacts/graphs/vllm-model-throughput.png)
+
 For this 550-token input workload with `max-num-seqs=1`, Dynamo approximately
 matches regular vLLM on Gemma 4 but does not improve throughput. The specialized
 DiffusionGemma vLLM runtime is substantially faster than the current
