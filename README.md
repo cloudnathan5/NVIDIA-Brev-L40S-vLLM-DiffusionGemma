@@ -52,9 +52,9 @@ kubectl port-forward -n dynamo-system service/gemma-disagg-frontend 8000:8000
 With that port-forward running, use the matching Dynamo benchmark commands:
 
 ```bash
-bash commands/aiperf_dynamo_gemma_conc1
-bash commands/aiperf_dynamo_gemma_conc5
-# Or: aiperf_dynamo_diffgemma_conc1 and aiperf_dynamo_diffgemma_conc5
+bash benchmarking/aiperf_dynamo_gemma_conc1.sh
+bash benchmarking/aiperf_dynamo_gemma_conc5.sh
+# Or: aiperf_dynamo_diffgemma_conc1.sh and aiperf_dynamo_diffgemma_conc5.sh
 ```
 
 Each Dynamo command has the same model, tokenizer, streaming mode, reasoning
