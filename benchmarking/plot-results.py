@@ -217,36 +217,44 @@ def plot_vllm_model_comparison(rows):
     x_positions = np.arange(len(concurrencies))
     width = 0.34
 
-    figure, axis = plt.subplots(figsize=(10, 6.5))
-    for model_index, model in enumerate(models):
-        values = [
-            lookup(
-                rows,
-                model,
-                "vLLM",
-                concurrency,
-                "output_token_throughput",
+    panels = (
+        (
+            "output_token_throughput",
+            "System output throughput\n(tokens/sec)",
+            "Output tokens/sec",
+        ),
+        (
+            "e2e_output_token_throughput",
+            "E2E throughput per user\n(tokens/sec/user)",
+            "Output tokens/sec/user",
+        ),
+    )
+    figure, axes = plt.subplots(1, 2, figsize=(15, 6.5))
+    for axis, (metric, title, y_label) in zip(axes, panels):
+        for model_index, model in enumerate(models):
+            values = [
+                lookup(rows, model, "vLLM", concurrency, metric)
+                for concurrency in concurrencies
+            ]
+            offset = (-0.5 if model_index == 0 else 0.5) * width
+            bars = axis.bar(
+                x_positions + offset,
+                values,
+                width,
+                label=model,
+                color=colors[model],
+                edgecolor="white",
             )
-            for concurrency in concurrencies
-        ]
-        offset = (-0.5 if model_index == 0 else 0.5) * width
-        bars = axis.bar(
-            x_positions + offset,
-            values,
-            width,
-            label=model,
-            color=colors[model],
-            edgecolor="white",
-        )
-        add_value_labels(axis, bars)
+            add_value_labels(axis, bars)
 
-    axis.set_xticks(x_positions, ["Concurrency 1", "Concurrency 5"])
-    axis.set_ylabel("Output tokens/sec")
-    axis.grid(axis="y")
-    axis.grid(axis="x", visible=False)
-    axis.spines["top"].set_visible(False)
-    axis.spines["right"].set_visible(False)
-    axis.margins(y=0.17)
+        axis.set_title(title)
+        axis.set_xticks(x_positions, ["Concurrency 1", "Concurrency 5"])
+        axis.set_ylabel(y_label)
+        axis.grid(axis="y")
+        axis.grid(axis="x", visible=False)
+        axis.spines["top"].set_visible(False)
+        axis.spines["right"].set_visible(False)
+        axis.margins(y=0.17)
 
     figure.suptitle(
         "Regular vLLM: Gemma 4 vs DiffusionGemma",
@@ -254,9 +262,12 @@ def plot_vllm_model_comparison(rows):
         fontweight="bold",
         y=0.97,
     )
+    legend_handles, legend_labels = axes[0].get_legend_handles_labels()
     figure.legend(
+        legend_handles,
+        legend_labels,
         loc="upper center",
-        bbox_to_anchor=(0.5, 0.9),
+        bbox_to_anchor=(0.5, 0.89),
         frameon=False,
         ncol=2,
     )
@@ -269,7 +280,13 @@ def plot_vllm_model_comparison(rows):
         color="#555555",
         fontsize=9,
     )
-    figure.subplots_adjust(left=0.1, right=0.98, top=0.82, bottom=0.13)
+    figure.subplots_adjust(
+        left=0.065,
+        right=0.985,
+        top=0.76,
+        bottom=0.13,
+        wspace=0.2,
+    )
     figure.savefig(GRAPH_DIR / "vllm-model-throughput.png", dpi=180)
     figure.savefig(GRAPH_DIR / "vllm-model-throughput.svg")
     plt.close(figure)
