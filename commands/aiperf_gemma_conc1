@@ -1,0 +1,8 @@
+aiperf profile \
+  --model "gemma-26B" \
+  --tokenizer "nvidia/Gemma-4-26B-A4B-NVFP4" \
+  --streaming \
+  --endpoint-type chat \
+  --url http://localhost:8000 \
+  --request-count 10 \
+  --concurrency 1 --concurrency-min 1

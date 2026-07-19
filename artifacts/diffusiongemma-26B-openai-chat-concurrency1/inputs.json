@@ -1,0 +1,154 @@
+{
+  "data": [
+    {
+      "session_id": "85f4b894-1f81-4aa0-ab76-2314f8e28e03",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " theres a bark of Epidamnum That stays but till her owner comes aboard And then sir bears away Our fraughtage sir I have conveyd aboard and I have bought The oil the balsamum and aquavitae The ship is in her trim the merry wind Blows fair from land they stay for nought at all But for their owner master and yourself ANTIPHOLUS OF EPHESUS How now a madman Why thou peevish sheep What ship of Epidamnum stays for me DROMIO OF SYRACUSE A ship you sent me to to hire waftage ANTIPHOLUS OF EPHESUS Thou drunken slave I sent thee for a rope And told thee to what purpose and what end DROMIO OF SYRACUSE You sent me for a ropes end as soon You sent me to the bay sir for a bark ANTIPHOLUS OF EPHESUS I will debate this matter at more leisure And teach your ears to list me with more heed To Adriana villain hie thee straight Give her this key and tell her in the desk Thats coverd oer with Turkish tapestry There is a purse of ducats let her send it Tell her I am arrested in the street And that shall bail me Hie thee slave be gone On officer to prison till it come Exeunt Merchant Angelo Officer and Antipholus of Ephesus DROMIO OF SYRACUSE To Adriana that is where we dind Where Dowsabel did claim me for her husband She is too big I hope for me to compass Thither I must although against my will For servants must their masters minds fulfil Exit SCENE II The same Enter Adriana and Luciana ADRIANA Ah Luciana did he tempt thee so Mightst thou perceive austerely in his eye That he did plead in earnest yea or no Lookd he or red or pale or sad or merrily What observation madst thou in this case Of his hearts meteors tilting in his face LUCIANA First he denied you had in him no right ADRIANA He meant he did me none the more my spite LUCIANA Then swore he that he was a stranger here ADRIANA And true he swore though yet forsworn he were LUCIANA Then pleaded I for you ADRIANA And what said he LUCIANA That love I beggd for you he beggd of me ADRIANA With what persuasion did he tempt thy love LUCIANA With words that in an honest suit might move First he did praise my beauty then my speech ADRIANA Didst speak him fair LUCIANA Have patience I beseech ADRIANA I cannot nor I will not hold me still My tongue though not my heart shall have his will He is deformed crooked old and sereIll"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "a31c8e83-9903-45d1-a870-cd8dad96fc7d",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": "MAN Ill do anything now that is virtuous but I am out of the road of rutting for ever Exeunt SCENE VI The same A room in the brothel Enter Pandar Bawd and Boult PANDAR Well I had rather than twice the worth of her she had neer come here BAWD Fie fie upon her Shes able to freeze the god Priapus and undo a whole generation We must either get her ravished or be rid of her When she should do for clients her fitment and do me the kindness of our profession she has me her quirks her reasons her master reasons her prayers her knees that she would make a puritan of the devil if he should cheapen a kiss of her BOULT Faith I must ravish her or shell disfurnish us of all our cavaliers and make our swearers priests PANDAR Now the pox upon her green sickness for me BAWD Faith theres no way to be rid ont but by the way to the pox Here comes the Lord Lysimachus disguised BOULT We should have both lord and lown if the peevish baggage would but give way to customers Enter Lysimachus LYSIMACHUS How now How a dozen of virginities BAWD Now the gods to bless your honour BOULT I am glad to see your honour in good health LYSIMACHUS You may so tis the better for you that your resorters stand upon sound legs How now Wholesome iniquity have you that a man may deal withal and defy the surgeon BAWD We have here one sir if she wouldbut there never came her like in Mytilene LYSIMACHUS If shed do the deed of darkness thou wouldst say BAWD Your honour knows what tis to say well enough LYSIMACHUS Well call forth call forth BOULT For flesh and blood sir white and red you shall see a rose and she were a rose indeed if she had but LYSIMACHUS What prithee BOULT O sir I can be modest LYSIMACHUS That dignifies the renown of a bawd no less than it gives a good report to a number to be chaste Exit Boult BAWD Here comes that which grows to the stalk never plucked yet I can assure you Reenter Boult with Marina Is she not a fair creature LYSIMACHUS Faith she would serve after a long voyage at sea Well theres for you leave us BAWD I beseech your honour give me leave a word and Ill have done presently LYSIMACHUS I beseech you do BAWD To Marina First I would have you note this is an honourable man MARINA I desire to find him so that I may worthily note him BAWD Next hes the governor"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "0935dde5-e0a9-4d8d-a69b-71b56955eb93",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " loves the world for him I pray thee let us go and find him out And quicken his embraced heaviness With some delight or other SALARINO Do we so Exeunt SCENE IX Belmont A room in Portias house Enter Nerissa and a Servitor NERISSA Quick quick I pray thee draw the curtain straight The Prince of Arragon hath taen his oath And comes to his election presently Flourish of cornets Enter the Prince of Arragon his train and Portia PORTIA Behold there stand the caskets noble Prince If you choose that wherein I am containd Straight shall our nuptial rites be solemnizd But if you fail without more speech my lord You must be gone from hence immediately ARRAGON I am enjoind by oath to observe three things First never to unfold to anyone Which casket twas I chose next if I fail Of the right casket never in my life To woo a maid in way of marriage Lastly If I do fail in fortune of my choice Immediately to leave you and be gone PORTIA To these injunctions everyone doth swear That comes to hazard for my worthless self ARRAGON And so have I addressd me Fortune now To my hearts hope Gold silver and base lead Who chooseth me must give and hazard all he hath You shall look fairer ere I give or hazard What says the golden chest Ha let me see Who chooseth me shall gain what many men desire What many men desire that many may be meant By the fool multitude that choose by show Not learning more than the fond eye doth teach Which pries not to th interior but like the martlet Builds in the weather on the outward wall Even in the force and road of casualty I will not choose what many men desire Because I will not jump with common spirits And rank me with the barbarous multitudes Why then to thee thou silver treasurehouse Tell me once more what title thou dost bear Who chooseth me shall get as much as he deserves And well said too for who shall go about To cozen fortune and be honourable Without the stamp of merit Let none presume To wear an undeserved dignity O that estates degrees and offices Were not derivd corruptly and that clear honour Were purchasd by the merit of the wearer How many then should cover that stand bare How many be commanded that command How much low peasantry would then be gleaned From the true seed of honour And how much honour Pickd from the chaff and ruin of the times To be new varnishd Well but to my choice Who chooseth me shall get as much as he deserves I will assume desert Give me a key for this And instantly unlock my fortunes here He opens the silver casket PORTIA Too long a pause for that which you find there ARRAGON Whats here The portrait of a blinking idiot Present"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "c725e0bf-4a23-4f90-aee9-b43c6d83c12a",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": "Z Faith there has been much to do on both sides and the nation holds it no sin to tarre them to controversy There was for a while no money bid for argument unless the poet and the player went to cuffs in the question HAMLET Ist possible GUILDENSTERN O there has been much throwing about of brains HAMLET Do the boys carry it away ROSENCRANTZ Ay that they do my lord Hercules and his load too HAMLET It is not very strange for my uncle is King of Denmark and those that would make mouths at him while my father lived give twenty forty fifty a hundred ducats apiece for his picture in little Sblood there is something in this more than natural if philosophy could find it out Flourish of trumpets within GUILDENSTERN There are the players HAMLET Gentlemen you are welcome to Elsinore Your hands come The appurtenance of welcome is fashion and ceremony Let me comply with you in this garb lest my extent to the players which I tell you must show fairly outward should more appear like entertainment than yours You are welcome But my unclefather and auntmother are deceived GUILDENSTERN In what my dear lord HAMLET I am but mad northnorthwest When the wind is southerly I know a hawk from a handsaw Enter Polonius POLONIUS Well be with you gentlemen HAMLET Hark you Guildenstern and you too at each ear a hearer That great baby you see there is not yet out of his swaddling clouts ROSENCRANTZ Happily hes the second time come to them for they say an old man is twice a child HAMLET I will prophesy he comes to tell me of the players Mark itYou say right sir for a Monday morning twas so indeed POLONIUS My lord I have news to tell you HAMLET My lord I have news to tell you When Roscius was an actor in Rome POLONIUS The actors are come hither my lord HAMLET Buzz buzz POLONIUS Upon my honour HAMLET Then came each actor on his ass POLONIUS The best actors in the world either for tragedy comedy history pastoral pastoralcomical historicalpastoral tragicalhistorical tragicalcomicalhistoricalpastoral scene individable or poem unlimited Seneca cannot be too heavy nor Plautus too light for the law of writ and the liberty These are the only men HAMLET O Jephthah judge of Israel what a treasure hadst thou POLONIUS What treasure had he my lord HAMLET Why One fair daughter and no more The which he loved passing well POLONIUS Aside Still on my daughter HAMLET Am I not i th right old Jephthah POLONIUS If you call me Jephthah my lord I have a daughter"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "3119b2ee-abaf-44da-b7c1-065586a85b23",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " no fair acceptance shine The sea all water yet receives rain still And in abundance addeth to his store So thou being rich in will add to thy will One will of mine to make thy large will more Let no unkind no fair beseechers kill Think all but one and me in that one Will 136 If thy soul check thee that I come so near Swear to thy blind soul that I was thy Will And will thy soul knows is admitted there Thus far for love my lovesuit sweet fulfil Will will fulfil the treasure of thy love Ay fill it full with wills and my will one In things of great receipt with case we prove Among a number one is reckoned none Then in the number let me pass untold Though in thy stores account I one must be For nothing hold me so it please thee hold That nothing me a something sweet to thee Make but my name thy love and love that still And then thou lovst me for my name is Will 137 Thou blind fool Love what dost thou to mine eyes That they behold and see not what they see They know what beauty is see where it lies Yet what the best is take the worst to be If eyes corrupt by overpartial looks Be anchored in the bay where all men ride Why of eyes falsehood hast thou forged hooks Whereto the judgement of my heart is tied Why should my heart think that a several plot Which my heart knows the wide worlds common place Or mine eyes seeing this say this is not To put fair truth upon so foul a face In things right true my heart and eyes have erred And to this false plague are they now transferred 138 When my love swears that she is made of truth I do believe her though I know she lies That she might think me some untutored youth Unlearned in the worlds false subtleties Thus vainly thinking that she thinks me young Although she knows my days are past the best Simply I credit her falsespeaking tongue On both sides thus is simple truth suppressed But wherefore says she not she is unjust And wherefore say not I that I am old O loves best habit is in seeming trust And age in love loves not to have years told Therefore I lie with her and she with me And in our faults by lies we flattered be 139 O call not me to justify the wrong That thy unkindness lays upon my heart Wound me not with thine eye but with thy tongue Use power with power and slay me not by art Tell me thou lovst elsewhere but in my sight Dear heart forbear to glance thine eye aside What needst thou wound with cunning when thy might Is more than my oerpressed defence can bide Let me excuse thee ah my love well knows Her pretty looks have been mine enemies And therefore from"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "9787932f-0ff5-48f1-baa2-3d458ad09dd8",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " leave thee so much money To warrant thee as I am rested for My wife is in a wayward mood today And will not lightly trust the messenger That I should be attachd in Ephesus I tell you twill sound harshly in her ears Enter Dromio of Ephesus with a ropes end Here comes my man I think he brings the money How now sir have you that I sent you for DROMIO OF EPHESUS Heres that I warrant you will pay them all ANTIPHOLUS OF EPHESUS But wheres the money DROMIO OF EPHESUS Why sir I gave the money for the rope ANTIPHOLUS OF EPHESUS Five hundred ducats villain for a rope DROMIO OF EPHESUS Ill serve you sir five hundred at the rate ANTIPHOLUS OF EPHESUS To what end did I bid thee hie thee home DROMIO OF EPHESUS To a ropes end sir and to that end am I returnd ANTIPHOLUS OF EPHESUS And to that end sir I will welcome you Beating him OFFICER Good sir be patient DROMIO OF EPHESUS Nay tis for me to be patient I am in adversity OFFICER Good now hold thy tongue DROMIO OF EPHESUS Nay rather persuade him to hold his hands ANTIPHOLUS OF EPHESUS Thou whoreson senseless villain DROMIO OF EPHESUS I would I were senseless sir that I might not feel your blows ANTIPHOLUS OF EPHESUS Thou art sensible in nothing but blows and so is an ass DROMIO OF EPHESUS I am an ass indeed you may prove it by my long ears I have served him from the hour of my nativity to this instant and have nothing at his hands for my service but blows When I am cold he heats me with beating when I am warm he cools me with beating I am waked with it when I sleep raised with it when I sit driven out of doors with it when I go from home welcomed home with it when I return Nay I bear it on my shoulders as a beggar wont her brat and I think when he hath lamed me I shall beg with it from door to door Enter Adriana Luciana Courtesan and a Schoolmaster called Pinch ANTIPHOLUS OF EPHESUS Come go along my wife is coming yonder DROMIO OF EPHESUS Mistress respice finem respect your end or rather the prophesy like the parrot Beware the ropes end ANTIPHOLUS OF EPHESUS Wilt thou still talk Beats him COURTESAN How say you now Is not your husband mad ADRIANA His incivility confirms no less Good Doctor"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "bda2fd7a-b9a9-4702-a4bc-898b64e8937b",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " traducd and taxd of other nations They clepe us drunkards and with swinish phrase Soil our addition and indeed it takes From our achievements though performd at height The pith and marrow of our attribute So oft it chances in particular men That for some vicious mole of nature in them As in their birth wherein they are not guilty Since nature cannot choose his origin By their oergrowth of some complexion Oft breaking down the pales and forts of reason Or by some habit that too much oerleavens The form of plausive mannersthat these men Carrying I say the stamp of one defect Being Natures livery or Fortunes star His virtues elsebe they as pure as grace As infinite as man may undergo Shall in the general censure take corruption From that particular fault The dram of evil Doth all the noble substance of a doubt To his own scandal HORATIO Look my lord it comes Enter Ghost HAMLET Angels and ministers of grace defend us Be thou a spirit of health or goblin damnd Bring with thee airs from heaven or blasts from hell Be thy intents wicked or charitable Thou comst in such a questionable shape That I will speak to thee Ill call thee Hamlet King father royal Dane O answer me Let me not burst in ignorance but tell Why thy canonizd bones hearsed in death Have burst their cerements why the sepulchre Wherein we saw thee quietly inurnd Hath opd his ponderous and marble jaws To cast thee up again What may this mean That thou dead corse again in complete steel Revisitst thus the glimpses of the moon Making night hideous and we fools of nature So horridly to shake our disposition With thoughts beyond the reaches of our souls Say why is this Wherefore What should we do Ghost beckons Hamlet HORATIO It beckons you to go away with it As if it some impartment did desire To you alone MARCELLUS Look with what courteous action It waves you to a more removed ground But do not go with it HORATIO No by no means HAMLET It will not speak then will I follow it HORATIO Do not my lord HAMLET Why what should be the fear I do not set my life at a pins fee And for my soul what can it do to that Being a thing immortal as itself It waves me forth again Ill follow it HORATIO What if it tempt you toward the flood my lord Or to the dreadful summit of the cliff That beetles oer his base into the sea And there assume some other horrible form Which might deprive your sovereignty of reason And draw you into madness Think of it The very place puts toys of desperation Without more motive into every brain That looks so many fathoms to the sea And hears it roar beneath HAMLET It waves me still Go on"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "e5679bb2-c47c-41ed-9b55-050267220a3c",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": "EO And Ill still stay to have thee still forget Forgetting any other home but this JULIET Tis almost morning I would have thee gone And yet no farther than a wantons bird That lets it hop a little from her hand Like a poor prisoner in his twisted gyves And with a silk thread plucks it back again So lovingjealous of his liberty ROMEO I would I were thy bird JULIET Sweet so would I Yet I should kill thee with much cherishing Good night good night Parting is such sweet sorrow That I shall say good night till it be morrow Exit ROMEO Sleep dwell upon thine eyes peace in thy breast Would I were sleep and peace so sweet to rest Hence will I to my ghostly Sires cell His help to crave and my dear hap to tell Exit SCENE III Friar Lawrences Cell Enter Friar Lawrence with a basket FRIAR LAWRENCE The greyeyd morn smiles on the frowning night Chequering the eastern clouds with streaks of light And fleckled darkness like a drunkard reels From forth days pathway made by Titans fiery wheels Now ere the sun advance his burning eye The day to cheer and nights dank dew to dry I must upfill this osier cage of ours With baleful weeds and preciousjuiced flowers The earth thats natures mother is her tomb What is her burying grave that is her womb And from her womb children of divers kind We sucking on her natural bosom find Many for many virtues excellent None but for some and yet all different O mickle is the powerful grace that lies In plants herbs stones and their true qualities For naught so vile that on the earth doth live But to the earth some special good doth give Nor aught so good but straind from that fair use Revolts from true birth stumbling on abuse Virtue itself turns vice being misapplied And vice sometimes by action dignified Enter Romeo Within the infant rind of this weak flower Poison hath residence and medicine power For this being smelt with that part cheers each part Being tasted slays all senses with the heart Two such opposed kings encamp them still In man as well as herbsgrace and rude will And where the worser is predominant Full soon the canker death eats up that plant ROMEO Good morrow father FRIAR LAWRENCE Benedicite What early tongue so sweet saluteth me Young son it argues a distemperd head So soon to bid good morrow to thy bed Care keeps his watch in every old mans eye And where care lodges sleep will never lie But where unbruised youth with unstuffd brain Doth couch his limbs there golden sleep doth reign Therefore thy earliness doth me assure Thou art uprousd with some distemperature Or if not so then here I hit it right Our Romeo hath not been in bed"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "f3a3f143-a285-4a62-8d52-90b4346cfab8",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " to you Exeunt Banquo and Fleance MACBETH Go bid thy mistress when my drink is ready She strike upon the bell Get thee to bed Exit Servant Is this a dagger which I see before me The handle toward my hand Come let me clutch thee I have thee not and yet I see thee still Art thou not fatal vision sensible To feeling as to sight or art thou but A dagger of the mind a false creation Proceeding from the heatoppressed brain I see thee yet in form as palpable As this which now I draw Thou marshallst me the way that I was going And such an instrument I was to use Mine eyes are made the fools o the other senses Or else worth all the rest I see thee still And on thy blade and dudgeon gouts of blood Which was not so beforeTheres no such thing It is the bloody business which informs Thus to mine eyesNow oer the one halfworld Nature seems dead and wicked dreams abuse The curtaind sleep Witchcraft celebrates Pale Hecates offrings and witherd murder Alarumd by his sentinel the wolf Whose howls his watch thus with his stealthy pace With Tarquins ravishing strides towards his design Moves like a ghostThou sure and firmset earth Hear not my steps which way they walk for fear Thy very stones prate of my whereabout And take the present horror from the time Which now suits with itWhiles I threat he lives Words to the heat of deeds too cold breath gives A bell rings I go and it is done The bell invites me Hear it not Duncan for it is a knell That summons thee to heaven or to hell Exit SCENE II The same Enter Lady Macbeth LADY MACBETH That which hath made them drunk hath made me bold What hath quenchd them hath given me fireHarkPeace It was the owl that shriekd the fatal bellman Which gives the sternst good night He is about it The doors are open and the surfeited grooms Do mock their charge with snores I have druggd their possets That death and nature do contend about them Whether they live or die MACBETH Within Whos therewhat ho LADY MACBETH Alack I am afraid they have awakd And tis not done Th attempt and not the deed Confounds usHarkI laid their daggers ready He could not miss emHad he not resembled My father as he slept I had donetMy husband Enter Macbeth MACBETH I have done the deedDidst thou not hear a noise LADY MACBETH I heard the owl scream and the crickets cry Did not you speak MACBETH When LADY MACBETH Now MACBETH As I descended LADY MACBETH Ay MACBETH HarkWho"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "c0f9a7af-d2a8-426e-ae8d-423028705817",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " be led in triumph Thorough the streets of Rome BRUTUS No Cassius no think not thou noble Roman That ever Brutus will go bound to Rome He bears too great a mind But this same day Must end that work the Ides of March begun And whether we shall meet again I know not Therefore our everlasting farewell take For ever and for ever farewell Cassius If we do meet again why we shall smile If not why then this parting was well made CASSIUS For ever and for ever farewell Brutus If we do meet again well smile indeed If not tis true this parting was well made BRUTUS Why then lead on O that a man might know The end of this days business ere it come But it sufficeth that the day will end And then the end is known Come ho away Exeunt SCENE II The same The field of battle Alarum Enter Brutus and Messala BRUTUS Ride ride Messala ride and give these bills Unto the legions on the other side Loud alarum Let them set on at once for I perceive But cold demeanor in Octavius wing And sudden push gives them the overthrow Ride ride Messala let them all come down Exeunt SCENE III Another part of the field Alarum Enter Cassius and Titinius CASSIUS O look Titinius look the villains fly Myself have to mine own turnd enemy This ensign here of mine was turning back I slew the coward and did take it from him TITINIUS O Cassius Brutus gave the word too early Who having some advantage on Octavius Took it too eagerly his soldiers fell to spoil Whilst we by Antony are all enclosd Enter Pindarus PINDARUS Fly further off my lord fly further off Mark Antony is in your tents my lord Fly therefore noble Cassius fly far off CASSIUS This hill is far enough Look look Titinius Are those my tents where I perceive the fire TITINIUS They are my lord CASSIUS Titinius if thou lovest me Mount thou my horse and hide thy spurs in him Till he have brought thee up to yonder troops And here again that I may rest assurd Whether yond troops are friend or enemy TITINIUS I will be here again even with a thought Exit CASSIUS Go Pindarus get higher on that hill My sight was ever thick Regard Titinius And tell me what thou notest about the field Pindarus goes up This day I breathed first Time is come round And where I did begin there shall I end My life is run his compass Sirrah what news PINDARUS Above O my lord CASSIUS What news PINDARUS Above Titinius is enclosed round about With horsemen that make to him on the spur Yet"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true
+        }
+      ]
+    }
+  ]
+}

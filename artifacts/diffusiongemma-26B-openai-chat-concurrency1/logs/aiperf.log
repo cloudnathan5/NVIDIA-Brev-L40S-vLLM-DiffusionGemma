@@ -1,0 +1,323 @@
+2026-07-18 22:38:51.868 - GPUTelemetryJSONLWriter_eabff8ea - INFO - GPU telemetry export enabled: /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-07-18 22:38:51.881 - OTelMetricsResultsProcessor_d3ea8638 - INFO - Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-07-18 22:38:51.881 - records_manager - INFO - OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-07-18 22:38:51.882 - RecordExportResultsProcessor_c2e0a2dc - INFO - Record metrics export enabled: /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/profile_export.jsonl
+2026-07-18 22:38:51.883 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics']
+2026-07-18 22:38:51.894 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-07-18 22:38:51.895 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-07-18 22:38:51.896 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-07-18 22:38:51.956 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-07-18 22:38:52.011 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-07-18 22:38:52.011 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-07-18 22:38:52.061 - system_controller - INFO - Registered Record Processor (id: 'record_processor_8d418da4')
+2026-07-18 22:38:52.183 - system_controller - INFO - Registered Worker (id: 'worker_067a85e8')
+2026-07-18 22:38:52.370 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-07-18 22:38:52.370 - system_controller - INFO - Configuring all services to start profiling
+2026-07-18 22:38:52.371 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-07-18 22:38:52.371 - InferenceResultParser_d455c289 - INFO - Configuring tokenizers for inference result parser (resolve_alias: True)
+2026-07-18 22:38:52.371 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-07-18 22:38:52.384 - server_metrics_manager - INFO - Server Metrics: Capturing baseline metrics...
+2026-07-18 22:38:52.389 - gpu_telemetry_manager - WARNING - GPU Telemetry: http://localhost:9400/metrics is not reachable
+2026-07-18 22:38:52.391 - gpu_telemetry_manager - WARNING - GPU Telemetry: http://localhost:9401/metrics is not reachable
+2026-07-18 22:38:52.391 - system_controller - INFO - DCGM telemetry skipped: no DCGM endpoints reachable
+2026-07-18 22:38:52.405 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_request_size_bytes
+2026-07-18 22:38:52.405 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_response_size_bytes
+2026-07-18 22:38:52.407 - system_controller - INFO - Server metrics enabled - 1/1 endpoint(s) reachable.
+2026-07-18 22:38:53.241 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 22:38:53.241 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-18 22:38:53.251 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK"
+2026-07-18 22:38:53.300 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 22:38:53.301 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-18 22:38:53.310 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK"
+2026-07-18 22:38:53.324 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 22:38:53.336 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-18 22:38:53.390 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 22:38:53.393 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-18 22:38:53.400 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-18 22:38:53.455 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-18 22:38:53.458 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-18 22:38:53.513 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-18 22:38:56.444 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK"
+2026-07-18 22:38:56.472 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK"
+2026-07-18 22:38:56.515 - dataset_manager - INFO - Tokenizer(s) configured in 4.14 seconds
+2026-07-18 22:38:56.515 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-07-18 22:38:56.546 - InferenceResultParser_d455c289 - INFO - Initialized tokenizers: {'diffusiongemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/diffusiongemma-26B-A4B-it-NVFP4'}} in 4.18 seconds
+2026-07-18 22:38:56.891 - MemoryMapDatasetBackingStore_6044d49c - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_3cda2a388b32/dataset.dat)
+2026-07-18 22:38:56.892 - MemoryMapDatasetBackingStore_6044d49c - INFO - Data file finalized: 10 conversations, 0.03 MB
+2026-07-18 22:38:56.893 - MemoryMapDatasetBackingStore_6044d49c - INFO - Index file created: /tmp/aiperf_mmap_3cda2a388b32/index.dat
+2026-07-18 22:38:56.893 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_3cda2a388b32/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_3cda2a388b32/index.dat') conversation_count=10 total_size_bytes=30497 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-07-18 22:38:56.893 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 10, unique turn count: 10
+2026-07-18 22:38:56.893 - dataset_manager - INFO - Generating inputs.json file at /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/inputs.json
+2026-07-18 22:38:56.895 - dataset_manager - INFO - inputs.json file generated in 0.00 seconds
+2026-07-18 22:38:56.901 - PhaseOrchestrator_2b839ecd - INFO - Initialized 1 phase(s): ['Profiling']
+2026-07-18 22:38:57.033 - dataset_manager - INFO - Dataset client initialized and freed 10 conversations from memory
+2026-07-18 22:38:57.033 - dataset_manager - INFO - Dataset configured in 0.52 seconds
+2026-07-18 22:38:57.034 - system_controller - INFO - All services configured in 4.66 seconds
+2026-07-18 22:38:57.035 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-07-18 22:38:57.036 - server_metrics_manager - INFO - Server Metrics: Started 1 collector(s) successfully
+2026-07-18 22:38:57.036 - system_controller - INFO - All services started profiling successfully
+2026-07-18 22:38:57.037 - system_controller - INFO - AIPerf System is PROFILING
+2026-07-18 22:38:57.038 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-07-18 22:38:57.039 - PhaseRunner - NOTICE - Phase profiling started | target: 10 requests
+2026-07-18 22:38:57.039 - records_manager - INFO - Credit phase start: profiling
+2026-07-18 22:39:22.320 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=10, completed=9, in_flight=1 | sessions: sent=10, completed=9
+2026-07-18 22:39:22.322 - records_manager - INFO - Sent 10 requests. Waiting for all to complete...
+2026-07-18 22:39:24.567 - PhaseRunner - NOTICE - Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=27.53s
+2026-07-18 22:39:24.568 - PhaseOrchestrator_2b839ecd - NOTICE - All credits completed
+2026-07-18 22:39:24.568 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784414337039013048, sent_end_ns=1784414362320732975, requests_end_ns=1784414364567526133, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0)
+2026-07-18 22:39:24.568 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)...
+2026-07-18 22:39:24.568 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-07-18 22:39:24.572 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-07-18 22:39:24.573 - records_manager - INFO - Processed 10 valid requests and 0 errors (10 total).
+2026-07-18 22:39:24.573 - records_manager - INFO - Received all records, processing now...
+2026-07-18 22:39:24.575 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-07-18 22:39:24.575 - server_metrics_manager - INFO - Server Metrics: Profiling complete, capturing final metrics...
+2026-07-18 22:39:26.567 - records_manager - INFO - Processing records results...
+2026-07-18 22:39:26.575 - system_controller - INFO - Waiting for server metrics results...
+2026-07-18 22:39:26.575 - system_controller - INFO - Waiting for server metrics results...
+2026-07-18 22:39:26.584 - records_manager - INFO - _finalize_and_process_results completed
+2026-07-18 22:39:26.586 - system_controller - INFO - All results received, initiating shutdown
+2026-07-18 22:39:27.350 - ExporterManager - INFO - Exporting all records
+2026-07-18 22:39:27.450 - ExporterManager - INFO - Exporting console data
+2026-07-18 22:57:50.543 - GPUTelemetryJSONLWriter_499e4a56 - INFO - GPU telemetry export enabled: /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-07-18 22:57:50.553 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-07-18 22:57:50.555 - OTelMetricsResultsProcessor_819754c4 - INFO - Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-07-18 22:57:50.555 - records_manager - INFO - OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-07-18 22:57:50.555 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-07-18 22:57:50.556 - RecordExportResultsProcessor_7c455276 - INFO - Record metrics export enabled: /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/profile_export.jsonl
+2026-07-18 22:57:50.557 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics']
+2026-07-18 22:57:50.630 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-07-18 22:57:50.630 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-07-18 22:57:50.679 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-07-18 22:57:50.729 - system_controller - INFO - Registered Record Processor (id: 'record_processor_d67c837b')
+2026-07-18 22:57:50.807 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-07-18 22:57:50.932 - system_controller - INFO - Registered Worker (id: 'worker_4e943200')
+2026-07-18 22:57:51.046 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-07-18 22:57:51.046 - system_controller - INFO - Configuring all services to start profiling
+2026-07-18 22:57:51.047 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-07-18 22:57:51.047 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-07-18 22:57:51.047 - InferenceResultParser_55e18310 - INFO - Configuring tokenizers for inference result parser (resolve_alias: True)
+2026-07-18 22:57:51.060 - server_metrics_manager - INFO - Server Metrics: Capturing baseline metrics...
+2026-07-18 22:57:51.064 - gpu_telemetry_manager - WARNING - GPU Telemetry: http://localhost:9400/metrics is not reachable
+2026-07-18 22:57:51.066 - gpu_telemetry_manager - WARNING - GPU Telemetry: http://localhost:9401/metrics is not reachable
+2026-07-18 22:57:51.066 - system_controller - INFO - DCGM telemetry skipped: no DCGM endpoints reachable
+2026-07-18 22:57:51.122 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_request_size_bytes
+2026-07-18 22:57:51.122 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_response_size_bytes
+2026-07-18 22:57:51.124 - system_controller - INFO - Server metrics enabled - 1/1 endpoint(s) reachable.
+2026-07-18 22:57:51.910 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 22:57:51.911 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-18 22:57:51.922 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK"
+2026-07-18 22:57:51.977 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 22:57:51.986 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK"
+2026-07-18 22:57:51.999 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 22:57:52.009 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-18 22:57:52.068 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 22:57:52.073 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-18 22:57:52.078 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-18 22:57:52.127 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-18 22:57:52.128 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-18 22:57:52.186 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-18 22:57:55.081 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK"
+2026-07-18 22:57:55.128 - InferenceResultParser_55e18310 - INFO - Initialized tokenizers: {'diffusiongemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/diffusiongemma-26B-A4B-it-NVFP4'}} in 4.08 seconds
+2026-07-18 22:57:55.232 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK"
+2026-07-18 22:57:55.274 - dataset_manager - INFO - Tokenizer(s) configured in 4.23 seconds
+2026-07-18 22:57:55.274 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-07-18 22:57:55.662 - MemoryMapDatasetBackingStore_7d3728c7 - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_8f02715a7886/dataset.dat)
+2026-07-18 22:57:55.664 - MemoryMapDatasetBackingStore_7d3728c7 - INFO - Data file finalized: 10 conversations, 0.03 MB
+2026-07-18 22:57:55.664 - MemoryMapDatasetBackingStore_7d3728c7 - INFO - Index file created: /tmp/aiperf_mmap_8f02715a7886/index.dat
+2026-07-18 22:57:55.664 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_8f02715a7886/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_8f02715a7886/index.dat') conversation_count=10 total_size_bytes=30698 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-07-18 22:57:55.664 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 10, unique turn count: 10
+2026-07-18 22:57:55.665 - dataset_manager - INFO - Generating inputs.json file at /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/inputs.json
+2026-07-18 22:57:55.667 - dataset_manager - INFO - inputs.json file generated in 0.00 seconds
+2026-07-18 22:57:55.671 - PhaseOrchestrator_389a128a - INFO - Initialized 1 phase(s): ['Profiling']
+2026-07-18 22:57:55.809 - dataset_manager - INFO - Dataset client initialized and freed 10 conversations from memory
+2026-07-18 22:57:55.809 - dataset_manager - INFO - Dataset configured in 0.53 seconds
+2026-07-18 22:57:55.818 - system_controller - INFO - All services configured in 4.77 seconds
+2026-07-18 22:57:55.818 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-07-18 22:57:55.819 - server_metrics_manager - INFO - Server Metrics: Started 1 collector(s) successfully
+2026-07-18 22:57:55.820 - system_controller - INFO - All services started profiling successfully
+2026-07-18 22:57:55.820 - system_controller - INFO - AIPerf System is PROFILING
+2026-07-18 22:57:55.822 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-07-18 22:57:55.822 - PhaseRunner - NOTICE - Phase profiling started | target: 10 requests
+2026-07-18 22:57:55.822 - records_manager - INFO - Credit phase start: profiling
+2026-07-18 22:58:24.628 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=10, completed=9, in_flight=1 | sessions: sent=10, completed=9
+2026-07-18 22:58:24.629 - records_manager - INFO - Sent 10 requests. Waiting for all to complete...
+2026-07-18 22:58:28.199 - PhaseRunner - NOTICE - Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=32.38s
+2026-07-18 22:58:28.200 - PhaseOrchestrator_389a128a - NOTICE - All credits completed
+2026-07-18 22:58:28.200 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784415475822306042, sent_end_ns=1784415504627818107, requests_end_ns=1784415508199713231, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0)
+2026-07-18 22:58:28.201 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)...
+2026-07-18 22:58:28.201 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-07-18 22:58:28.205 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-07-18 22:58:28.206 - records_manager - INFO - Processed 10 valid requests and 0 errors (10 total).
+2026-07-18 22:58:28.206 - records_manager - INFO - Received all records, processing now...
+2026-07-18 22:58:28.208 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-07-18 22:58:28.208 - server_metrics_manager - INFO - Server Metrics: Profiling complete, capturing final metrics...
+2026-07-18 22:58:30.199 - records_manager - INFO - Processing records results...
+2026-07-18 22:58:30.211 - system_controller - INFO - Waiting for server metrics results...
+2026-07-18 22:58:30.211 - system_controller - INFO - Waiting for server metrics results...
+2026-07-18 22:58:30.223 - records_manager - INFO - _finalize_and_process_results completed
+2026-07-18 22:58:30.307 - system_controller - INFO - All results received, initiating shutdown
+2026-07-18 22:58:31.033 - ExporterManager - INFO - Exporting all records
+2026-07-18 22:58:31.080 - ExporterManager - INFO - Exporting console data
+2026-07-18 23:01:00.675 - GPUTelemetryJSONLWriter_773ae7ca - INFO - GPU telemetry export enabled: /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-07-18 23:01:00.687 - OTelMetricsResultsProcessor_dd404219 - INFO - Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-07-18 23:01:00.687 - records_manager - INFO - OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-07-18 23:01:00.688 - RecordExportResultsProcessor_2d2bd9a3 - INFO - Record metrics export enabled: /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/profile_export.jsonl
+2026-07-18 23:01:00.694 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics']
+2026-07-18 23:01:00.699 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-07-18 23:01:00.700 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-07-18 23:01:00.758 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-07-18 23:01:00.759 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-07-18 23:01:00.803 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-07-18 23:01:00.853 - system_controller - INFO - Registered Record Processor (id: 'record_processor_a3839513')
+2026-07-18 23:01:00.935 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-07-18 23:01:00.975 - system_controller - INFO - Registered Worker (id: 'worker_e9813afd')
+2026-07-18 23:01:01.177 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-07-18 23:01:01.178 - system_controller - INFO - Configuring all services to start profiling
+2026-07-18 23:01:01.178 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-07-18 23:01:01.179 - InferenceResultParser_749d607d - INFO - Configuring tokenizers for inference result parser (resolve_alias: True)
+2026-07-18 23:01:01.179 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-07-18 23:01:01.192 - server_metrics_manager - INFO - Server Metrics: Capturing baseline metrics...
+2026-07-18 23:01:01.195 - gpu_telemetry_manager - WARNING - GPU Telemetry: http://localhost:9400/metrics is not reachable
+2026-07-18 23:01:01.197 - gpu_telemetry_manager - WARNING - GPU Telemetry: http://localhost:9401/metrics is not reachable
+2026-07-18 23:01:01.198 - system_controller - INFO - DCGM telemetry skipped: no DCGM endpoints reachable
+2026-07-18 23:01:01.211 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_request_size_bytes
+2026-07-18 23:01:01.211 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_response_size_bytes
+2026-07-18 23:01:01.213 - system_controller - INFO - Server metrics enabled - 1/1 endpoint(s) reachable.
+2026-07-18 23:01:02.084 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 23:01:02.095 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK"
+2026-07-18 23:01:02.174 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 23:01:02.174 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 23:01:02.174 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-18 23:01:02.175 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-18 23:01:02.184 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-18 23:01:02.185 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK"
+2026-07-18 23:01:02.248 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-18 23:01:02.263 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 23:01:02.274 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-18 23:01:02.302 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-18 23:01:02.331 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-18 23:01:02.387 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-18 23:01:05.289 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK"
+2026-07-18 23:01:05.335 - InferenceResultParser_749d607d - INFO - Initialized tokenizers: {'diffusiongemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/diffusiongemma-26B-A4B-it-NVFP4'}} in 4.16 seconds
+2026-07-18 23:01:05.450 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK"
+2026-07-18 23:01:05.497 - dataset_manager - INFO - Tokenizer(s) configured in 4.32 seconds
+2026-07-18 23:01:05.497 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-07-18 23:01:05.918 - MemoryMapDatasetBackingStore_3102e237 - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_433a1d88e124/dataset.dat)
+2026-07-18 23:01:05.920 - MemoryMapDatasetBackingStore_3102e237 - INFO - Data file finalized: 20 conversations, 0.06 MB
+2026-07-18 23:01:05.921 - MemoryMapDatasetBackingStore_3102e237 - INFO - Index file created: /tmp/aiperf_mmap_433a1d88e124/index.dat
+2026-07-18 23:01:05.921 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_433a1d88e124/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_433a1d88e124/index.dat') conversation_count=20 total_size_bytes=62277 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-07-18 23:01:05.921 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 20, unique turn count: 20
+2026-07-18 23:01:05.922 - dataset_manager - INFO - Generating inputs.json file at /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/inputs.json
+2026-07-18 23:01:05.924 - dataset_manager - INFO - inputs.json file generated in 0.00 seconds
+2026-07-18 23:01:05.928 - PhaseOrchestrator_b78b8196 - INFO - Initialized 1 phase(s): ['Profiling']
+2026-07-18 23:01:06.061 - dataset_manager - INFO - Dataset client initialized and freed 20 conversations from memory
+2026-07-18 23:01:06.061 - dataset_manager - INFO - Dataset configured in 0.56 seconds
+2026-07-18 23:01:06.062 - system_controller - INFO - All services configured in 4.88 seconds
+2026-07-18 23:01:06.063 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-07-18 23:01:06.064 - server_metrics_manager - INFO - Server Metrics: Started 1 collector(s) successfully
+2026-07-18 23:01:06.065 - system_controller - INFO - All services started profiling successfully
+2026-07-18 23:01:06.065 - system_controller - INFO - AIPerf System is PROFILING
+2026-07-18 23:01:06.067 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-07-18 23:01:06.067 - PhaseRunner - NOTICE - Phase profiling started | target: 20 requests
+2026-07-18 23:01:06.068 - records_manager - INFO - Credit phase start: profiling
+2026-07-18 23:02:04.095 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=20, completed=19, in_flight=1 | sessions: sent=20, completed=19
+2026-07-18 23:02:04.096 - records_manager - INFO - Sent 20 requests. Waiting for all to complete...
+2026-07-18 23:02:08.077 - PhaseRunner - NOTICE - Phase profiling complete | completed=20, cancelled=0, errors=0 | sessions: completed=20, cancelled=0 | elapsed=62.01s
+2026-07-18 23:02:08.078 - PhaseOrchestrator_b78b8196 - NOTICE - All credits completed
+2026-07-18 23:02:08.078 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784415666067572266, sent_end_ns=1784415724094924271, requests_end_ns=1784415728077401257, total_expected_requests=20, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=20, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=19, error_records=0)
+2026-07-18 23:02:08.079 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 19 of 20 records processed)...
+2026-07-18 23:02:08.079 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-07-18 23:02:08.086 - records_manager - INFO - Processed 20 valid requests and 0 errors (20 total).
+2026-07-18 23:02:08.086 - records_manager - INFO - Received all records, processing now...
+2026-07-18 23:02:08.088 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-07-18 23:02:08.088 - server_metrics_manager - INFO - Server Metrics: Profiling complete, capturing final metrics...
+2026-07-18 23:02:08.095 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-07-18 23:02:10.078 - records_manager - INFO - Processing records results...
+2026-07-18 23:02:10.085 - system_controller - INFO - Waiting for server metrics results...
+2026-07-18 23:02:10.085 - system_controller - INFO - Waiting for server metrics results...
+2026-07-18 23:02:10.097 - records_manager - INFO - _finalize_and_process_results completed
+2026-07-18 23:02:10.099 - system_controller - INFO - All results received, initiating shutdown
+2026-07-18 23:02:10.871 - ExporterManager - INFO - Exporting all records
+2026-07-18 23:02:10.921 - ExporterManager - INFO - Exporting console data
+2026-07-18 23:05:48.910 - GPUTelemetryJSONLWriter_2649002c - INFO - GPU telemetry export enabled: /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-07-18 23:05:48.919 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-07-18 23:05:48.921 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-07-18 23:05:48.922 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics']
+2026-07-18 23:05:48.928 - OTelMetricsResultsProcessor_c0112f54 - INFO - Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-07-18 23:05:48.928 - records_manager - INFO - OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-07-18 23:05:48.929 - RecordExportResultsProcessor_3b670384 - INFO - Record metrics export enabled: /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/profile_export.jsonl
+2026-07-18 23:05:48.998 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-07-18 23:05:48.999 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-07-18 23:05:49.051 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-07-18 23:05:49.112 - system_controller - INFO - Registered Record Processor (id: 'record_processor_202748ab')
+2026-07-18 23:05:49.178 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-07-18 23:05:49.214 - system_controller - INFO - Registered Worker (id: 'worker_91d9fb27')
+2026-07-18 23:05:49.410 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-07-18 23:05:49.410 - system_controller - INFO - Configuring all services to start profiling
+2026-07-18 23:05:49.411 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-07-18 23:05:49.411 - InferenceResultParser_b1ec5937 - INFO - Configuring tokenizers for inference result parser (resolve_alias: True)
+2026-07-18 23:05:49.411 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-07-18 23:05:49.423 - server_metrics_manager - INFO - Server Metrics: Capturing baseline metrics...
+2026-07-18 23:05:49.427 - gpu_telemetry_manager - WARNING - GPU Telemetry: http://localhost:9400/metrics is not reachable
+2026-07-18 23:05:49.429 - gpu_telemetry_manager - WARNING - GPU Telemetry: http://localhost:9401/metrics is not reachable
+2026-07-18 23:05:49.430 - system_controller - INFO - DCGM telemetry skipped: no DCGM endpoints reachable
+2026-07-18 23:05:49.444 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_request_size_bytes
+2026-07-18 23:05:49.444 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_response_size_bytes
+2026-07-18 23:05:49.446 - system_controller - INFO - Server metrics enabled - 1/1 endpoint(s) reachable.
+2026-07-18 23:05:50.280 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 23:05:50.290 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK"
+2026-07-18 23:05:50.350 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 23:05:50.351 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-18 23:05:50.362 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK"
+2026-07-18 23:05:50.374 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 23:05:50.374 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-18 23:05:50.384 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-18 23:05:50.442 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-18 23:05:50.443 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-18 23:05:50.453 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-18 23:05:50.501 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-18 23:05:50.507 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-18 23:05:50.564 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-18 23:05:53.582 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK"
+2026-07-18 23:05:53.625 - InferenceResultParser_b1ec5937 - INFO - Initialized tokenizers: {'diffusiongemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/diffusiongemma-26B-A4B-it-NVFP4'}} in 4.21 seconds
+2026-07-18 23:05:53.684 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK"
+2026-07-18 23:05:53.735 - dataset_manager - INFO - Tokenizer(s) configured in 4.32 seconds
+2026-07-18 23:05:53.735 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-07-18 23:05:54.114 - MemoryMapDatasetBackingStore_9885102c - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_21f59579bce6/dataset.dat)
+2026-07-18 23:05:54.115 - MemoryMapDatasetBackingStore_9885102c - INFO - Data file finalized: 10 conversations, 0.03 MB
+2026-07-18 23:05:54.116 - MemoryMapDatasetBackingStore_9885102c - INFO - Index file created: /tmp/aiperf_mmap_21f59579bce6/index.dat
+2026-07-18 23:05:54.116 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_21f59579bce6/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_21f59579bce6/index.dat') conversation_count=10 total_size_bytes=29983 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-07-18 23:05:54.116 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 10, unique turn count: 10
+2026-07-18 23:05:54.117 - dataset_manager - INFO - Generating inputs.json file at /home/shadeform/test/artifacts/diffusiongemma-26B-openai-chat-concurrency1/inputs.json
+2026-07-18 23:05:54.120 - dataset_manager - INFO - inputs.json file generated in 0.00 seconds
+2026-07-18 23:05:54.126 - PhaseOrchestrator_26be64d0 - INFO - Initialized 1 phase(s): ['Profiling']
+2026-07-18 23:05:54.279 - dataset_manager - INFO - Dataset client initialized and freed 10 conversations from memory
+2026-07-18 23:05:54.279 - dataset_manager - INFO - Dataset configured in 0.54 seconds
+2026-07-18 23:05:54.280 - system_controller - INFO - All services configured in 4.87 seconds
+2026-07-18 23:05:54.281 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-07-18 23:05:54.282 - server_metrics_manager - INFO - Server Metrics: Started 1 collector(s) successfully
+2026-07-18 23:05:54.283 - system_controller - INFO - All services started profiling successfully
+2026-07-18 23:05:54.283 - system_controller - INFO - AIPerf System is PROFILING
+2026-07-18 23:05:54.284 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-07-18 23:05:54.285 - PhaseRunner - NOTICE - Phase profiling started | target: 10 requests
+2026-07-18 23:05:54.285 - records_manager - INFO - Credit phase start: profiling
+2026-07-18 23:06:23.024 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=10, completed=9, in_flight=1 | sessions: sent=10, completed=9
+2026-07-18 23:06:23.025 - records_manager - INFO - Sent 10 requests. Waiting for all to complete...
+2026-07-18 23:06:25.855 - PhaseRunner - NOTICE - Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=31.57s
+2026-07-18 23:06:25.855 - PhaseOrchestrator_26be64d0 - NOTICE - All credits completed
+2026-07-18 23:06:25.856 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784415954285206519, sent_end_ns=1784415983023893055, requests_end_ns=1784415985855176997, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0)
+2026-07-18 23:06:25.856 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)...
+2026-07-18 23:06:25.856 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-07-18 23:06:25.860 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-07-18 23:06:25.861 - records_manager - INFO - Processed 10 valid requests and 0 errors (10 total).
+2026-07-18 23:06:25.862 - records_manager - INFO - Received all records, processing now...
+2026-07-18 23:06:25.863 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-07-18 23:06:25.863 - server_metrics_manager - INFO - Server Metrics: Profiling complete, capturing final metrics...
+2026-07-18 23:06:27.856 - records_manager - INFO - Processing records results...
+2026-07-18 23:06:27.863 - system_controller - INFO - Waiting for server metrics results...
+2026-07-18 23:06:27.864 - system_controller - INFO - Waiting for server metrics results...
+2026-07-18 23:06:27.874 - records_manager - INFO - _finalize_and_process_results completed
+2026-07-18 23:06:27.876 - system_controller - INFO - All results received, initiating shutdown
+2026-07-18 23:06:28.645 - ExporterManager - INFO - Exporting all records
+2026-07-18 23:06:28.693 - ExporterManager - INFO - Exporting console data
