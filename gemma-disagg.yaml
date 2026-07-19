@@ -1,0 +1,119 @@
+apiVersion: nvidia.com/v1beta1
+kind: DynamoGraphDeployment
+metadata:
+  name: gemma-disagg
+spec:
+  components:
+    - name: Frontend
+      type: frontend
+      replicas: 1
+      podTemplate:
+        spec:
+          containers:
+            - name: main
+              image: nvcr.io/nvidia/ai-dynamo/vllm-runtime:1.2.1
+              env:
+                - name: VLLM_API_KEY
+                  valueFrom:
+                    secretKeyRef:
+                      name: vllm-api-key
+                      key: VLLM_API_KEY
+                      optional: true
+
+    - name: VllmDecodeWorker
+      type: worker
+      replicas: 1
+      podTemplate:
+        spec:
+          containers:
+            - name: main
+              image: nvcr.io/nvidia/ai-dynamo/vllm-runtime:1.2.1
+              workingDir: /workspace/examples/backends/vllm
+              command: [python3, -m, dynamo.vllm]
+              args:
+                - --model
+                - nvidia/Gemma-4-26B-A4B-NVFP4
+                - --disaggregation-mode
+                - decode
+                - --kv-transfer-config
+                - '{"kv_connector":"NixlConnector","kv_role":"kv_both"}'
+                - --trust-remote-code
+                - --served-model-name
+                - gemma-26B
+                - --max-num-seqs
+                - "1"
+                - --max-model-len
+                - "262144"
+                - --attention-backend
+                - TRITON_ATTN
+                - --enable-auto-tool-choice
+                - --tool-call-parser
+                - gemma4
+                - --reasoning-parser
+                - gemma4
+                - --generation-config
+                - vllm
+                - --default-chat-template-kwargs
+                - '{"enable_thinking":true}'
+                - --gpu-memory-utilization
+                - "0.95"
+              envFrom:
+                - secretRef:
+                    name: hf-token-secret
+              env:
+                - name: VLLM_USE_V2_MODEL_RUNNER
+                  value: "1"
+              resources:
+                limits:
+                  nvidia.com/gpu: "1"
+                requests:
+                  ephemeral-storage: 20Gi
+
+    - name: VllmPrefillWorker
+      type: worker
+      replicas: 1
+      podTemplate:
+        spec:
+          containers:
+            - name: main
+              image: nvcr.io/nvidia/ai-dynamo/vllm-runtime:1.2.1
+              workingDir: /workspace/examples/backends/vllm
+              command: [python3, -m, dynamo.vllm]
+              args:
+                - --model
+                - nvidia/Gemma-4-26B-A4B-NVFP4
+                - --disaggregation-mode
+                - prefill
+                - --kv-transfer-config
+                - '{"kv_connector":"NixlConnector","kv_role":"kv_both"}'
+                - --trust-remote-code
+                - --served-model-name
+                - gemma-26B
+                - --max-num-seqs
+                - "1"
+                - --max-model-len
+                - "262144"
+                - --attention-backend
+                - TRITON_ATTN
+                - --enable-auto-tool-choice
+                - --tool-call-parser
+                - gemma4
+                - --reasoning-parser
+                - gemma4
+                - --generation-config
+                - vllm
+                - --default-chat-template-kwargs
+                - '{"enable_thinking":true}'
+                - --gpu-memory-utilization
+                - "0.95"
+              envFrom:
+                - secretRef:
+                    name: hf-token-secret
+              env:
+                - name: VLLM_USE_V2_MODEL_RUNNER
+                  value: "1"
+              resources:
+                limits:
+                  nvidia.com/gpu: "1"
+                requests:
+                  ephemeral-storage: 20Gi
