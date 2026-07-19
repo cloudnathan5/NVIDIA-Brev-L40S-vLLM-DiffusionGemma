@@ -6,6 +6,10 @@ DYNAMO_PLATFORM_VERSION="${DYNAMO_PLATFORM_VERSION:-1.0.2}"
 DYNAMO_NAMESPACE="${DYNAMO_NAMESPACE:-dynamo-system}"
 GPU_OPERATOR_NAMESPACE="${GPU_OPERATOR_NAMESPACE:-gpu-operator}"
 
+if [[ -z "${KUBECONFIG:-}" && -r /etc/rancher/k3s/k3s.yaml ]]; then
+  export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+fi
+
 for tool in kubectl helm; do
   if ! command -v "$tool" >/dev/null 2>&1; then
     echo "Missing required command: $tool" >&2

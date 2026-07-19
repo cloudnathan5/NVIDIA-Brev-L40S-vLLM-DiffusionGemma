@@ -65,6 +65,10 @@ fi
 
 "${sudo_cmd[@]}" env "${k3s_env[@]}" sh "$tmp_dir/install-k3s.sh"
 
+if [[ -z "${KUBECONFIG:-}" && -r /etc/rancher/k3s/k3s.yaml ]]; then
+  export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+fi
+
 echo "Waiting for the Kubernetes node to become ready..."
 "${sudo_cmd[@]}" k3s kubectl wait \
   --for=condition=Ready node --all --timeout=180s
