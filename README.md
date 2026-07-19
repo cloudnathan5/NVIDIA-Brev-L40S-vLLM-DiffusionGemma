@@ -49,6 +49,20 @@ kubectl port-forward -n dynamo-system service/gemma-disagg-frontend 8000:8000
 # Or: service/diffgemma-disagg-frontend
 ```
 
+With that port-forward running, use the matching Dynamo benchmark commands:
+
+```bash
+bash commands/aiperf_dynamo_gemma_conc1
+bash commands/aiperf_dynamo_gemma_conc5
+# Or: aiperf_dynamo_diffgemma_conc1 and aiperf_dynamo_diffgemma_conc5
+```
+
+Each Dynamo command has the same model, tokenizer, streaming mode, reasoning
+setting, request count, and concurrency as its regular vLLM counterpart. The
+separate filenames make it easier to keep the two sets of results organized.
+Gemma's stable runtime is recorded in `serve-gemma-dynamo/`; unlike the custom
+DiffusionGemma runtime, it does not need to be built or imported into K3s.
+
 Use the same explicit reasoning setting for regular vLLM and Dynamo benchmarks
 so the comparison does not depend on different server defaults:
 
