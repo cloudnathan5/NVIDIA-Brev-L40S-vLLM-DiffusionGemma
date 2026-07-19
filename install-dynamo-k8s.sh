@@ -72,7 +72,7 @@ if [[ -n "${HF_TOKEN:-}" ]]; then
     --from-literal=HF_TOKEN="$HF_TOKEN" \
     --dry-run=client -o yaml | kubectl apply -f -
 else
-  echo "HF_TOKEN is not set; create hf-token-secret before deploying a model." >&2
+  echo "HF_TOKEN is not set; public models will download anonymously."
 fi
 
 if [[ -n "${VLLM_API_KEY:-}" ]]; then
@@ -99,4 +99,5 @@ echo "Installation complete. The cluster exposes ${allocatable_gpus} GPU(s)."
 echo "Deploy one model with:"
 echo "  kubectl apply -n $DYNAMO_NAMESPACE -f gemma-disagg.yaml"
 echo "or:"
+echo "  bash build-diffgemma-dynamo-runtime.sh"
 echo "  kubectl apply -n $DYNAMO_NAMESPACE -f diffgemma-disagg.yaml"

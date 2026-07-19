@@ -45,6 +45,10 @@ nvidia-smi --query-gpu=name,driver_version --format=csv,noheader
 
 "${sudo_cmd[@]}" apt-get update
 "${sudo_cmd[@]}" apt-get install -y ca-certificates curl
+if ! command -v docker >/dev/null 2>&1; then
+  "${sudo_cmd[@]}" apt-get install -y docker.io
+  "${sudo_cmd[@]}" systemctl enable --now docker
+fi
 
 tmp_dir="$(mktemp -d)"
 cleanup() {

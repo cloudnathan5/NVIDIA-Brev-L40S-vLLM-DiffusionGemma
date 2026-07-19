@@ -3,6 +3,7 @@ aiperf profile \
   --tokenizer "nvidia/Gemma-4-26B-A4B-NVFP4" \
   --streaming \
   --endpoint-type chat \
+  --extra-inputs '{"chat_template_kwargs":{"enable_thinking":true}}' \
   --url http://localhost:8000 \
   --request-count 10 \
   --concurrency 1 --concurrency-min 1
