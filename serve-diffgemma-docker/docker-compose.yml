@@ -19,7 +19,7 @@ services:
     command: >
       nvidia/diffusiongemma-26B-A4B-it-NVFP4
       --trust-remote-code
-      --served-model-name gemma-26B
+      --served-model-name diffusiongemma-26B
       --max-num-seqs 1
       --max-model-len 262144
       --attention-backend TRITON_ATTN
