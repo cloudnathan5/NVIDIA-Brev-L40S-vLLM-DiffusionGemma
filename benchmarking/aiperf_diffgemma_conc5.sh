@@ -1,9 +1,11 @@
-aiperf profile \
-  --model "diffusiongemma-26B" \
-  --tokenizer "nvidia/diffusiongemma-26B-A4B-it-NVFP4" \
-  --streaming \
-  --endpoint-type chat \
-  --extra-inputs '{"chat_template_kwargs":{"enable_thinking":true}}' \
-  --url http://localhost:8000 \
-  --request-count 10 \
-  --concurrency 5 --concurrency-min 5
+#!/usr/bin/env bash
+set -euo pipefail
+
+script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+source "$script_dir/aiperf-common.sh"
+
+run_aiperf \
+  "diffusiongemma-26B" \
+  "nvidia/diffusiongemma-26B-A4B-it-NVFP4" \
+  5 \
+  "$script_dir/artifacts/vllm/diffgemma/conc5"

@@ -63,6 +63,22 @@ separate filenames make it easier to keep the two sets of results organized.
 Gemma's stable runtime is recorded in `serve-gemma-dynamo/`; unlike the custom
 DiffusionGemma runtime, it does not need to be built or imported into K3s.
 
+To reproduce the complete regular vLLM versus Dynamo comparison, install the
+pinned benchmark tools and run the orchestrator from the repository root:
+
+```bash
+bash benchmarking/install-benchmark-tools.sh
+bash benchmarking/run-all-benchmarks.sh
+```
+
+The orchestrator stops any existing Compose or Dynamo inference workload before
+each transition, runs all eight model/engine/concurrency combinations, and
+cleans up the final workload. Fresh AIPerf exports are written under
+`benchmarking/artifacts/{vllm,dynamo}/`, while the original baseline exports are
+preserved under `benchmarking/artifacts/archive/`. It also creates CSV and
+Markdown summaries plus PNG and SVG throughput comparison charts in
+`benchmarking/artifacts/graphs/`.
+
 Use the same explicit reasoning setting for regular vLLM and Dynamo benchmarks
 so the comparison does not depend on different server defaults:
 

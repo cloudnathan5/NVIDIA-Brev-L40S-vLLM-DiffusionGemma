@@ -1,9 +1,11 @@
-aiperf profile \
-  --model "gemma-26B" \
-  --tokenizer "nvidia/Gemma-4-26B-A4B-NVFP4" \
-  --streaming \
-  --endpoint-type chat \
-  --extra-inputs '{"chat_template_kwargs":{"enable_thinking":true}}' \
-  --url http://localhost:8000 \
-  --request-count 10 \
-  --concurrency 5 --concurrency-min 5
+#!/usr/bin/env bash
+set -euo pipefail
+
+script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+source "$script_dir/aiperf-common.sh"
+
+run_aiperf \
+  "gemma-26B" \
+  "nvidia/Gemma-4-26B-A4B-NVFP4" \
+  5 \
+  "$script_dir/artifacts/vllm/gemma/conc5"
