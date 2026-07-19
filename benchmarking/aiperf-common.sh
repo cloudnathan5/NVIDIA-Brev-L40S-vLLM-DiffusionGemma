@@ -33,6 +33,7 @@ run_aiperf() {
     --extra-inputs '{"chat_template_kwargs":{"enable_thinking":true}}' \
     --url http://localhost:8000 \
     --request-count 10 \
+    --random-seed 42 \
     --concurrency "$concurrency" \
     --concurrency-min "$concurrency" \
     --artifact-dir "$artifact_dir" \

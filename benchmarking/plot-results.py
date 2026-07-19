@@ -108,6 +108,7 @@ def write_summary_markdown(rows):
         [
             "",
             "AIPerf 0.11.0, 10 requests per run, streaming chat, reasoning enabled.",
+            "Every run uses synthetic-data random seed 42 for matching engine workloads.",
             "Output throughput uses total output sequence length, including reasoning tokens.",
         ]
     )

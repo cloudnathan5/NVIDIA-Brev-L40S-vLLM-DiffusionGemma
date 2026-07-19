@@ -73,7 +73,8 @@ bash benchmarking/run-all-benchmarks.sh
 
 The orchestrator stops any existing Compose or Dynamo inference workload before
 each transition, runs all eight model/engine/concurrency combinations, and
-cleans up the final workload. Fresh AIPerf exports are written under
+cleans up the final workload. Every command uses random seed `42` so matching
+engine runs receive the same synthetic prompts. Fresh AIPerf exports are written under
 `benchmarking/artifacts/{vllm,dynamo}/`, while the original baseline exports are
 preserved under `benchmarking/artifacts/archive/`. It also creates CSV and
 Markdown summaries plus PNG and SVG throughput comparison charts in
