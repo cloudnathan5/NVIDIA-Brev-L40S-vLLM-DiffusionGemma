@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "session_id": "session_000000",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " of his son When I informd him then he calld me sot And told me I had turnd the wrong side out What most he should dislike seems pleasant to him What like offensive GONERIL To Edmund Then shall you go no further It is the cowish terror of his spirit That dares not undertake Hell not feel wrongs Which tie him to an answer Our wishes on the way May prove effects Back Edmund to my brother Hasten his musters and conduct his powers I must change names at home and give the distaff Into my husbands hands This trusty servant Shall pass between us Ere long you are like to hear If you dare venture in your own behalf A mistresss command Giving a favour Wear this spare speech Decline your head This kiss if it durst speak Would stretch thy spirits up into the air Conceive and fare thee well EDMUND Yours in the ranks of death Exit Edmund GONERIL My most dear Gloucester O the difference of man and man To thee a womans services are due My fool usurps my body OSWALD Madam here comes my lord Exit Enter Albany GONERIL I have been worth the whistle ALBANY O Goneril You are not worth the dust which the rude wind Blows in your face I fear your disposition That nature which contemns its origin Cannot be bordered certain in itself She that herself will sliver and disbranch From her material sap perforce must wither And come to deadly use GONERIL No more the text is foolish ALBANY Wisdom and goodness to the vile seem vile Filths savour but themselves What have you done Tigers not daughters what have you performd A father and a gracious aged man Whose reverence even the headluggd bear would lick Most barbarous most degenerate have you madded Could my good brother suffer you to do it A man a prince by him so benefitted If that the heavens do not their visible spirits Send quickly down to tame these vile offences It will come Humanity must perforce prey on itself Like monsters of the deep GONERIL Milkliverd man That bearst a cheek for blows a head for wrongs Who hast not in thy brows an eye discerning Thine honour from thy suffering that not knowst Fools do those villains pity who are punishd Ere they have done their mischief Wheres thy drum France spreads his banners in our noiseless land With plumed helm thy state begins to threat Whilst thou a moral fool sittst still and criest Alack why does he so ALBANY See thyself devil Proper deformity seems not in the fiend So horrid as in woman GONERIL O vain fool ALBANY Thou changed and selfcoverd thing for shame Bemonster not thy feature Weret my fitness To let these hands obey my blood They are apt enough to dislocate and tear Thy"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          }
+        }
+      ]
+    },
+    {
+      "session_id": "session_000001",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " And yielding to him humours well his frenzy ANTIPHOLUS OF EPHESUS Thou hast subornd the goldsmith to arrest me ADRIANA Alas I sent you money to redeem you By Dromio here who came in haste for it DROMIO OF EPHESUS Money by me Heart and goodwill you might But surely master not a rag of money ANTIPHOLUS OF EPHESUS Wentst not thou to her for a purse of ducats ADRIANA He came to me and I deliverd it LUCIANA And I am witness with her that she did DROMIO OF EPHESUS God and the ropemaker bear me witness That I was sent for nothing but a rope PINCH Mistress both man and master is possessd I know it by their pale and deadly looks They must be bound and laid in some dark room ANTIPHOLUS OF EPHESUS Say wherefore didst thou lock me forth today And why dost thou deny the bag of gold ADRIANA I did not gentle husband lock thee forth DROMIO OF EPHESUS And gentle master I receivd no gold But I confess sir that we were lockd out ADRIANA Dissembling villain thou speakst false in both ANTIPHOLUS OF EPHESUS Dissembling harlot thou art false in all And art confederate with a damned pack To make a loathsome abject scorn of me But with these nails Ill pluck out these false eyes That would behold in me this shameful sport Enter three or four and offer to bind him He strives ADRIANA O bind him bind him let him not come near me PINCH More company the fiend is strong within him LUCIANA Ay me poor man how pale and wan he looks ANTIPHOLUS OF EPHESUS What will you murder me Thou jailer thou I am thy prisoner Wilt thou suffer them To make a rescue OFFICER Masters let him go He is my prisoner and you shall not have him PINCH Go bind this man for he is frantic too ADRIANA What wilt thou do thou peevish officer Hast thou delight to see a wretched man Do outrage and displeasure to himself OFFICER He is my prisoner If I let him go The debt he owes will be requird of me ADRIANA I will discharge thee ere I go from thee Bear me forthwith unto his creditor And knowing how the debt grows I will pay it Good master doctor see him safe conveyd Home to my house O most unhappy day ANTIPHOLUS OF EPHESUS O most unhappy strumpet DROMIO OF EPHESUS Master I am here enterd in bond for you ANTIPHOLUS OF EPHESUS Out on thee"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          }
+        }
+      ]
+    },
+    {
+      "session_id": "session_000002",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " I spy a great peard under her muffler FORD Will you follow gentlemen I beseech you follow see but the issue of my jealousy If I cry out thus upon no trail never trust me when I open again PAGE Lets obey his humour a little further Come gentlemen Exeunt Ford Page Caius Evans and Shallow MISTRESS PAGE Trust me he beat him most pitifully MISTRESS FORD Nay by th mass that he did not he beat him most unpitifully methought MISTRESS PAGE Ill have the cudgel hallowed and hung oer the altar It hath done meritorious service MISTRESS FORD What think you May we with the warrant of womanhood and the witness of a good conscience pursue him with any further revenge MISTRESS PAGE The spirit of wantonness is sure scared out of him If the devil have him not in feesimple with fine and recovery he will never I think in the way of waste attempt us again MISTRESS FORD Shall we tell our husbands how we have served him MISTRESS PAGE Yes by all means if it be but to scrape the figures out of your husbands brains If they can find in their hearts the poor unvirtuous fat knight shall be any further afflicted we two will still be the ministers MISTRESS FORD Ill warrant theyll have him publicly shamed and methinks there would be no period to the jest should he not be publicly shamed MISTRESS PAGE Come to the forge with it then shape it I would not have things cool Exeunt SCENE III A room in the Garter Inn Enter Host and Bardolph BARDOLPH Sir the Germans desire to have three of your horses The Duke himself will be tomorrow at court and they are going to meet him HOST What duke should that be comes so secretly I hear not of him in the court Let me speak with the gentlemen They speak English BARDOLPH Ay sir Ill call them to you HOST They shall have my horses but Ill make them pay Ill sauce them They have had my house a week at command I have turned away my other guests They must come off Ill sauce them Come Exeunt SCENE IV A room in Fords house Enter Page Ford Mistress Page Mistress Ford and Sir Hugh Evans EVANS Tis one of the best discretions of a oman as ever I did look upon PAGE And did he send you both these letters at an instant MISTRESS PAGE Within a quarter of an hour FORD Pardon me wife Henceforth do what thou wilt I rather will suspect the sun with cold Than thee with wantonness Now doth thy honour stand In him that was of late an heretic As firm as faith PAGE Tis well tis well no more Be not as extreme in submission as in offence But let our plot go forward Let our"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          }
+        }
+      ]
+    },
+    {
+      "session_id": "session_000003",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " sixteen months and longer might have stayed If crooked fortune had not thwarted me FIRST OUTLAW What were you banished thence VALENTINE I was SECOND OUTLAW For what offence VALENTINE For that which now torments me to rehearse I killed a man whose death I much repent But yet I slew him manfully in fight Without false vantage or base treachery FIRST OUTLAW Why neer repent it if it were done so But were you banished for so small a fault VALENTINE I was and held me glad of such a doom SECOND OUTLAW Have you the tongues VALENTINE My youthful travel therein made me happy Or else I often had been miserable THIRD OUTLAW By the bare scalp of Robin Hoods fat friar This fellow were a king for our wild faction FIRST OUTLAW Well have him Sirs a word SPEED Master be one of them Its an honourable kind of thievery VALENTINE Peace villain SECOND OUTLAW Tell us this have you anything to take to VALENTINE Nothing but my fortune THIRD OUTLAW Know then that some of us are gentlemen Such as the fury of ungoverned youth Thrust from the company of awful men Myself was from Verona banished For practising to steal away a lady An heir and near allied unto the Duke SECOND OUTLAW And I from Mantua for a gentleman Who in my mood I stabbed unto the heart FIRST OUTLAW And I for suchlike petty crimes as these But to the purpose for we cite our faults That they may hold excused our lawless lives And partly seeing you are beautified With goodly shape and by your own report A linguist and a man of such perfection As we do in our quality much want SECOND OUTLAW Indeed because you are a banished man Therefore above the rest we parley to you Are you content to be our general To make a virtue of necessity And live as we do in this wilderness THIRD OUTLAW What sayst thou Wilt thou be of our consort Say Ay and be the captain of us all Well do thee homage and be ruled by thee Love thee as our commander and our king FIRST OUTLAW But if thou scorn our courtesy thou diest SECOND OUTLAW Thou shalt not live to brag what we have offered VALENTINE I take your offer and will live with you Provided that you do no outrages On silly women or poor passengers THIRD OUTLAW No we detest such vile base practices Come go with us well bring thee to our crews And show thee all the treasure we have got Which with ourselves all rest at thy dispose Exeunt SCENE II Milan The court of the Dukes palace Enter Proteus PROTEUS Already have I been false to Valentine And now I must be as unjust to Thurio Under the colour of commending him I have access my own love to prefer But Silvia is too"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          }
+        }
+      ]
+    },
+    {
+      "session_id": "session_000004",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " Most military sir salutation MOTH Aside to Costard They have been at a great feast of languages and stolen the scraps COSTARD O they have lived long on the almsbasket of words I marvel thy master hath not eaten thee for a word for thou art not so long by the head as honorificabilitudinitatibus Thou art easier swallowed than a flapdragon MOTH Peace The peal begins ARMADO To Holofernes Monsieur are you not lettered MOTH Yes yes he teaches boys the hornbook What is a b spelt backward with the horn on his head HOLOFERNES Ba pueritia with a horn added MOTH Ba most silly sheep with a horn You hear his learning HOLOFERNES Quis quis thou consonant MOTH The third of the five vowels if you repeat them or the fifth if I HOLOFERNES I will repeat them a e i MOTH The sheep The other two concludes it o u ARMADO Now by the salt wave of the Mediterraneum a sweet touch a quick venue of wit Snip snap quick and home It rejoiceth my intellect True wit MOTH Offered by a child to an old manwhich is witold HOLOFERNES What is the figure What is the figure MOTH Horns HOLOFERNES Thou disputes like an infant Go whip thy gig MOTH Lend me your horn to make one and I will whip about your infamy unum cita A gig of a cuckolds horn COSTARD An I had but one penny in the world thou shouldst have it to buy gingerbread Hold there is the very remuneration I had of thy master thou halfpenny purse of wit thou pigeonegg of discretion O an the heavens were so pleased that thou wert but my bastard what a joyful father wouldst thou make me Go to thou hast it ad dunghill at the fingers ends as they say HOLOFERNES O I smell false Latin Dunghill for unguem ARMADO Artsman preambulate We will be singuled from the barbarous Do you not educate youth at the chargehouse on the top of the mountain HOLOFERNES Or mons the hill ARMADO At your sweet pleasure for the mountain HOLOFERNES I do sans question ARMADO Sir it is the Kings most sweet pleasure and affection to congratulate the Princess at her pavilion in the posteriors of this day which the rude multitude call the afternoon HOLOFERNES The posterior of the day most generous sir is liable congruent and measurable for the afternoon The word is well culled chose sweet and apt I do assure you sir I do assureARMADO Sir the King is a noble gentleman and my familiar I do assure ye very good friend For what is inward between us let it pass I do beseech thee remember thy"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          }
+        }
+      ]
+    },
+    {
+      "session_id": "session_000005",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " wings to fly And when the flight is made to one so dear Of such divine perfection as Sir Proteus LUCETTA Better forbear till Proteus make return JULIA O knowst thou not his looks are my souls food Pity the dearth that I have pined in By longing for that food so long a time Didst thou but know the inly touch of love Thou wouldst as soon go kindle fire with snow As seek to quench the fire of love with words LUCETTA I do not seek to quench your loves hot fire But qualify the fires extreme rage Lest it should burn above the bounds of reason JULIA The more thou dammst it up the more it burns The current that with gentle murmur glides Thou knowst being stopped impatiently doth rage But when his fair course is not hindered He makes sweet music with th enamelled stones Giving a gentle kiss to every sedge He overtaketh in his pilgrimage And so by many winding nooks he strays With willing sport to the wild ocean Then let me go and hinder not my course Ill be as patient as a gentle stream And make a pastime of each weary step Till the last step have brought me to my love And there Ill rest as after much turmoil A blessed soul doth in Elysium LUCETTA But in what habit will you go along JULIA Not like a woman for I would prevent The loose encounters of lascivious men Gentle Lucetta fit me with such weeds As may beseem some wellreputed page LUCETTA Why then your ladyship must cut your hair JULIA No girl Ill knit it up in silken strings With twenty oddconceited truelove knots To be fantastic may become a youth Of greater time than I shall show to be LUCETTA What fashion madam shall I make your breeches JULIA That fits as well as Tell me good my lord What compass will you wear your farthingale Why een what fashion thou best likes Lucetta LUCETTA You must needs have them with a codpiece madam JULIA Out out Lucetta that will be illfavoured LUCETTA A round hose madam nows not worth a pin Unless you have a codpiece to stick pins on JULIA Lucetta as thou lovst me let me have What thou thinkst meet and is most mannerly But tell me wench how will the world repute me For undertaking so unstaid a journey I fear me it will make me scandalized LUCETTA If you think so then stay at home and go not JULIA Nay that I will not LUCETTA Then never dream on infamy but go If Proteus like your journey when you come No matter whos displeased when you are gone I fear me he will scarce be pleased withal JULIA That"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          }
+        }
+      ]
+    },
+    {
+      "session_id": "session_000006",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " Genitive horum harum horum MISTRESS QUICKLY Vengeance of Jennys case fie on her Never name her child if she be a whore EVANS For shame oman MISTRESS QUICKLY You do ill to teach the child such wordsHe teaches him to hick and to hack which theyll do fast enough of themselves and to call whore mFie upon you EVANS Oman art thou lunatics Hast thou no understandings for thy cases and the numbers of the genders Thou art as foolish Christian creatures as I would desires MISTRESS PAGE To Quickly Prithee hold thy peace EVANS Show me now William some declensions of your pronouns WILLIAM Forsooth I have forgot EVANS It is qui quae quod If you forget your quis your quaes and your quods you must be preeches Go your ways and play go MISTRESS PAGE He is a better scholar than I thought he was EVANS He is a good sprag memory Farewell Mistress Page MISTRESS PAGE Adieu good Sir Hugh Exit Sir Hugh Evans Get you home boy Come we stay too long Exeunt SCENE II A room in Fords house Enter Falstaff and Mistress Ford FALSTAFF Mistress Ford your sorrow hath eaten up my sufferance I see you are obsequious in your love and I profess requital to a hairs breadth not only Mistress Ford in the simple office of love but in all the accoutrement compliment and ceremony of it But are you sure of your husband now MISTRESS FORD Hes abirding sweet Sir John MISTRESS PAGE Within What ho gossip Ford what ho MISTRESS FORD Step into the chamber Sir John Exit Falstaff Enter Mistress Page MISTRESS PAGE How now sweetheart whos at home besides yourself MISTRESS FORD Why none but mine own people MISTRESS PAGE Indeed MISTRESS FORD No certainly Aside to her Speak louder MISTRESS PAGE Truly I am so glad you have nobody here MISTRESS FORD Why MISTRESS PAGE Why woman your husband is in his old lunes again He so takes on yonder with my husband so rails against all married mankind so curses all Eves daughters of what complexion soever and so buffets himself on the forehead crying Peer out peer out that any madness I ever yet beheld seemed but tameness civility and patience to this his distemper he is in now I am glad the fat knight is not here MISTRESS FORD Why does he talk of him MISTRESS PAGE Of none but him and swears he was carried out the last time he searched for him in a basket protests to my husband he is now here and hath drawn him and the rest of their company from their sport to make another experiment of his suspicion But I am glad the knight is not here Now"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          }
+        }
+      ]
+    },
+    {
+      "session_id": "session_000007",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " in a sleep and then to return and swear the lies he forges Enter Parolles PAROLLES Ten oclock Within these three hours twill be time enough to go home What shall I say I have done It must be a very plausive invention that carries it They begin to smoke me and disgraces have of late knockd too often at my door I find my tongue is too foolhardy but my heart hath the fear of Mars before it and of his creatures not daring the reports of my tongue FIRST LORD Aside This is the first truth that eer thine own tongue was guilty of PAROLLES What the devil should move me to undertake the recovery of this drum being not ignorant of the impossibility and knowing I had no such purpose I must give myself some hurts and say I got them in exploit yet slight ones will not carry it They will say Came you off with so little and great ones I dare not give Wherefore whats the instance Tongue I must put you into a butterwomans mouth and buy myself another of Bajazets mule if you prattle me into these perils FIRST LORD Aside Is it possible he should know what he is and be that he is PAROLLES I would the cutting of my garments would serve the turn or the breaking of my Spanish sword FIRST LORD Aside We cannot afford you so PAROLLES Or the baring of my beard and to say it was in stratagem FIRST LORD Aside Twould not do PAROLLES Or to drown my clothes and say I was stripped FIRST LORD Aside Hardly serve PAROLLES Though I swore I leapd from the window of the citadel FIRST LORD Aside How deep PAROLLES Thirty fathom FIRST LORD Aside Three great oaths would scarce make that be believed PAROLLES I would I had any drum of the enemys I would swear I recoverd it FIRST LORD Aside You shall hear one anon PAROLLES A drum now of the enemys Alarum within FIRST LORD Throca movousus cargo cargo cargo ALL Cargo cargo cargo villianda par corbo cargo They seize and blindfold him PAROLLES O ransom ransom Do not hide mine eyes FIRST SOLDIER Boskos thromuldo boskos PAROLLES I know you are the Muskos regiment And I shall lose my life for want of language If there be here German or Dane Low Dutch Italian or French let him speak to me Ill discover that which shall undo the Florentine FIRST SOLDIER Boskos vauvado I understand thee and can speak thy tongue Kerelybonto Sir Betake thee to thy faith for seventeen poniards are at thy bosom PAROLLES O FIRST SOLDIER O pray pray pray Manka revania dulche FIRST LORD Oscorbidulchos volivorco FIRST SOLDIER The General"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          }
+        }
+      ]
+    },
+    {
+      "session_id": "session_000008",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " end And as the long divorce of steel falls on me Make of your prayers one sweet sacrifice And lift my soul to heaven Lead on i Gods name LOVELL I do beseech your Grace for charity If ever any malice in your heart Were hid against me now to forgive me frankly BUCKINGHAM Sir Thomas Lovell I as free forgive you As I would be forgiven I forgive all There cannot be those numberless offences Gainst me that I cannot take peace with No black envy Shall mark my grave Commend me to his Grace And if he speak of Buckingham pray tell him You met him half in heaven My vows and prayers Yet are the Kings and till my soul forsake Shall cry for blessings on him May he live Longer than I have time to tell his years Ever beloved and loving may his rule be And when old Time shall lead him to his end Goodness and he fill up one monument LOVELL To th waterside I must conduct your Grace Then give my charge up to Sir Nicholas Vaux Who undertakes you to your end VAUX Prepare there The Duke is coming See the barge be ready And fit it with such furniture as suits The greatness of his person BUCKINGHAM Nay Sir Nicholas Let it alone My state now will but mock me When I came hither I was Lord High Constable And Duke of Buckingham now poor Edward Bohun Yet I am richer than my base accusers That never knew what truth meant I now seal it And with that blood will make em one day groan fort My noble father Henry of Buckingham Who first raised head against usurping Richard Flying for succour to his servant Banister Being distressed was by that wretch betrayed And without trial fell Gods peace be with him Henry the Seventh succeeding truly pitying My fathers loss like a most royal prince Restored me to my honours and out of ruins Made my name once more noble Now his son Henry the Eighth life honour name and all That made me happy at one stroke has taken For ever from the world I had my trial And must needs say a noble one which makes me A little happier than my wretched father Yet thus far we are one in fortunes both Fell by our servants by those men we loved most A most unnatural and faithless service Heaven has an end in all yet you that hear me This from a dying man receive as certain Where you are liberal of your loves and counsels Be sure you be not loose for those you make friends And give your hearts to when they once perceive The least rub in your fortunes fall away Like water from ye never found again But where they mean to sink ye All good people Pray for me I must now forsake ye The last hour Of my long weary life is come upon me Farewell And when you would say something that is sad Speak how I fell I have"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          }
+        }
+      ]
+    },
+    {
+      "session_id": "session_000009",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": " Petruchio PETRUCHIO Padua affords nothing but what is kind HORTENSIO For both our sakes I would that word were true PETRUCHIO Now for my life Hortensio fears his widow WIDOW Then never trust me if I be afeard PETRUCHIO You are very sensible and yet you miss my sense I mean Hortensio is afeard of you WIDOW He that is giddy thinks the world turns round PETRUCHIO Roundly replied KATHERINA Mistress how mean you that WIDOW Thus I conceive by him PETRUCHIO Conceives by me How likes Hortensio that HORTENSIO My widow says thus she conceives her tale PETRUCHIO Very well mended Kiss him for that good widow KATHERINA He that is giddy thinks the world turns round I pray you tell me what you meant by that WIDOW Your husband being troubled with a shrew Measures my husbands sorrow by his woe And now you know my meaning KATHERINA A very mean meaning WIDOW Right I mean you KATHERINA And I am mean indeed respecting you PETRUCHIO To her Kate HORTENSIO To her widow PETRUCHIO A hundred marks my Kate does put her down HORTENSIO Thats my office PETRUCHIO Spoke like an officer ha to thee lad Drinks to Hortensio BAPTISTA How likes Gremio these quickwitted folks GREMIO Believe me sir they butt together well BIANCA Head and butt An hastywitted body Would say your head and butt were head and horn VINCENTIO Ay mistress bride hath that awakend you BIANCA Ay but not frighted me therefore Ill sleep again PETRUCHIO Nay that you shall not since you have begun Have at you for a bitter jest or two BIANCA Am I your bird I mean to shift my bush And then pursue me as you draw your bow You are welcome all Exeunt Bianca Katherina and Widow PETRUCHIO She hath prevented me Here Signior Tranio This bird you aimd at though you hit her not Therefore a health to all that shot and missd TRANIO O sir Lucentio slippd me like his greyhound Which runs himself and catches for his master PETRUCHIO A good swift simile but something currish TRANIO Tis well sir that you hunted for yourself Tis thought your deer does hold you at a bay BAPTISTA O ho Petruchio Tranio hits you now LUCENTIO I thank thee for that gird good Tranio HORTENSIO Confess confess hath he not hit you here PETRUCHIO A has a little galld me I confess And as the"
+            }
+          ],
+          "model": "diffusiongemma-26B",
+          "stream": true,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          }
+        }
+      ]
+    }
+  ]
+}

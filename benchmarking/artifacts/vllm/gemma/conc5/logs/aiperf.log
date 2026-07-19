@@ -1,0 +1,89 @@
+2026-07-19 19:23:25.395 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-07-19 19:23:25.402 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Gemma-4-26B-A4B-NVFP4 detected
+2026-07-19 19:23:25.402 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-07-19 19:23:25.402 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Gemma-4-26B-A4B-NVFP4']
+2026-07-19 19:23:25.604 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-07-19 19:23:25.605 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-07-19 19:23:25.607 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics']
+2026-07-19 19:23:25.614 - GPUTelemetryJSONLWriter_54d2f383 - INFO - GPU telemetry export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5/gpu_telemetry_export.jsonl
+2026-07-19 19:23:25.617 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-07-19 19:23:25.625 - OTelMetricsResultsProcessor_3a134444 - INFO - Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-07-19 19:23:25.625 - records_manager - INFO - OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-07-19 19:23:25.626 - RecordExportResultsProcessor_7da129bf - INFO - Record metrics export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5/profile_export.jsonl
+2026-07-19 19:23:25.675 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-07-19 19:23:25.692 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-07-19 19:23:25.751 - system_controller - INFO - Registered Record Processor (id: 'record_processor_ba7c7f94')
+2026-07-19 19:23:25.807 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-07-19 19:23:25.837 - system_controller - INFO - Registered Worker (id: 'worker_4d5f98a9')
+2026-07-19 19:23:25.851 - system_controller - INFO - Registered Worker (id: 'worker_5a003598')
+2026-07-19 19:23:25.852 - system_controller - INFO - Registered Worker (id: 'worker_c4116630')
+2026-07-19 19:23:25.856 - system_controller - INFO - Registered Worker (id: 'worker_1944a815')
+2026-07-19 19:23:25.856 - system_controller - INFO - Registered Worker (id: 'worker_63b751e7')
+2026-07-19 19:23:26.084 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-07-19 19:23:26.084 - system_controller - INFO - Configuring all services to start profiling
+2026-07-19 19:23:26.085 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-07-19 19:23:26.086 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-07-19 19:23:26.086 - InferenceResultParser_c0d37579 - INFO - Configuring tokenizers for inference result parser (resolve_alias: True)
+2026-07-19 19:23:26.098 - server_metrics_manager - INFO - Server Metrics: Capturing baseline metrics...
+2026-07-19 19:23:26.110 - gpu_telemetry_manager - WARNING - GPU Telemetry: http://localhost:9400/metrics is not reachable
+2026-07-19 19:23:26.111 - gpu_telemetry_manager - WARNING - GPU Telemetry: http://localhost:9401/metrics is not reachable
+2026-07-19 19:23:26.112 - system_controller - INFO - DCGM telemetry skipped: no DCGM endpoints reachable
+2026-07-19 19:23:26.117 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_request_size_bytes
+2026-07-19 19:23:26.117 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_response_size_bytes
+2026-07-19 19:23:26.119 - system_controller - INFO - Server metrics enabled - 1/1 endpoint(s) reachable.
+2026-07-19 19:23:27.105 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-19 19:23:27.116 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/config.json "HTTP/1.1 200 OK"
+2026-07-19 19:23:27.137 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-19 19:23:27.147 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/config.json "HTTP/1.1 200 OK"
+2026-07-19 19:23:27.193 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-19 19:23:27.194 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-19 19:23:27.204 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-19 19:23:27.220 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-19 19:23:27.220 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-19 19:23:27.230 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-19 19:23:27.262 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-19 19:23:27.286 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-19 19:23:27.321 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-19 19:23:27.340 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-19 19:23:30.091 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4 "HTTP/1.1 200 OK"
+2026-07-19 19:23:30.135 - dataset_manager - INFO - Tokenizer(s) configured in 4.05 seconds
+2026-07-19 19:23:30.135 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-07-19 19:23:30.524 - MemoryMapDatasetBackingStore_48fe9464 - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_b13ac76d2262/dataset.dat)
+2026-07-19 19:23:30.525 - MemoryMapDatasetBackingStore_48fe9464 - INFO - Data file finalized: 10 conversations, 0.03 MB
+2026-07-19 19:23:30.526 - MemoryMapDatasetBackingStore_48fe9464 - INFO - Index file created: /tmp/aiperf_mmap_b13ac76d2262/index.dat
+2026-07-19 19:23:30.526 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_b13ac76d2262/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_b13ac76d2262/index.dat') conversation_count=10 total_size_bytes=29770 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-07-19 19:23:30.526 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 10, unique turn count: 10
+2026-07-19 19:23:30.526 - dataset_manager - INFO - Generating inputs.json file at /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5/inputs.json
+2026-07-19 19:23:30.528 - PhaseOrchestrator_435e1162 - INFO - Initialized 1 phase(s): ['Profiling']
+2026-07-19 19:23:30.529 - dataset_manager - INFO - inputs.json file generated in 0.00 seconds
+2026-07-19 19:23:30.567 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4 "HTTP/1.1 200 OK"
+2026-07-19 19:23:30.610 - InferenceResultParser_c0d37579 - INFO - Initialized tokenizers: {'gemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/Gemma-4-26B-A4B-NVFP4'}} in 4.52 seconds
+2026-07-19 19:23:30.638 - dataset_manager - INFO - Dataset client initialized and freed 10 conversations from memory
+2026-07-19 19:23:30.638 - dataset_manager - INFO - Dataset configured in 0.50 seconds
+2026-07-19 19:23:30.639 - system_controller - INFO - All services configured in 4.55 seconds
+2026-07-19 19:23:30.639 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-07-19 19:23:30.640 - server_metrics_manager - INFO - Server Metrics: Started 1 collector(s) successfully
+2026-07-19 19:23:30.641 - system_controller - INFO - All services started profiling successfully
+2026-07-19 19:23:30.641 - system_controller - INFO - AIPerf System is PROFILING
+2026-07-19 19:23:30.642 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-07-19 19:23:30.643 - PhaseRunner - NOTICE - Phase profiling started | target: 10 requests
+2026-07-19 19:23:30.643 - records_manager - INFO - Credit phase start: profiling
+2026-07-19 19:24:52.801 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=10, completed=5, in_flight=5 | sessions: sent=10, completed=5
+2026-07-19 19:24:52.802 - records_manager - INFO - Sent 10 requests. Waiting for all to complete...
+2026-07-19 19:26:28.014 - PhaseRunner - NOTICE - Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=177.37s
+2026-07-19 19:26:28.014 - PhaseOrchestrator_435e1162 - NOTICE - All credits completed
+2026-07-19 19:26:28.015 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-07-19 19:26:28.015 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784489010643079063, sent_end_ns=1784489092801356323, requests_end_ns=1784489188014427990, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0)
+2026-07-19 19:26:28.015 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)...
+2026-07-19 19:26:28.015 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-07-19 19:26:28.043 - records_manager - INFO - Processed 10 valid requests and 0 errors (10 total).
+2026-07-19 19:26:28.043 - records_manager - INFO - Received all records, processing now...
+2026-07-19 19:26:28.044 - server_metrics_manager - INFO - Server Metrics: Profiling complete, capturing final metrics...
+2026-07-19 19:26:28.044 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-07-19 19:26:30.015 - records_manager - INFO - Processing records results...
+2026-07-19 19:26:30.023 - system_controller - INFO - Waiting for server metrics results...
+2026-07-19 19:26:30.023 - system_controller - INFO - Waiting for server metrics results...
+2026-07-19 19:26:30.040 - records_manager - INFO - _finalize_and_process_results completed
+2026-07-19 19:26:30.045 - system_controller - INFO - All results received, initiating shutdown
+2026-07-19 19:26:30.649 - ExporterManager - INFO - Exporting all records
+2026-07-19 19:26:30.725 - ExporterManager - INFO - Exporting console data

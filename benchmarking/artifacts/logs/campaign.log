@@ -1,0 +1,1319 @@
+Stopping Kubernetes and Compose inference workloads...
+Starting regular vLLM for Gemma 4...
+time="2026-07-19T19:17:09Z" level=warning msg="No services to build"
+ Network serve-gemma-docker_default Creating 
+ Network serve-gemma-docker_default Created 
+ Container serve-gemma-docker-vllm-1 Creating 
+ Container serve-gemma-docker-vllm-1 Created 
+ Container serve-gemma-docker-vllm-1 Starting 
+ Container serve-gemma-docker-vllm-1 Started 
+vLLM Gemma 4 is ready.
+0, NVIDIA L40S, 43307 MiB, 46068 MiB, 0 %
+1, NVIDIA L40S, 3 MiB, 46068 MiB, 0 %
+19:20:45.718 INFO     Starting AIPerf System (_single_run.py:64)
+19:20:45.724 INFO     [OK] Tokenizer nvidia/Gemma-4-26B-A4B-NVFP4 detected (tokenizer_display.py:297)
+19:20:45.724 INFO     1 tokenizer validated | 0.0s (tokenizer_display.py:306)
+19:20:45.724 INFO     HF cache hit (skipping prefetch): ['nvidia/Gemma-4-26B-A4B-NVFP4'] (tokenizer_validator.py:99)
+19:20:45.925 INFO     Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager') (system_controller.py:391)
+19:20:45.930 INFO     Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics'] (manager.py:75)
+19:20:45.932 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller.py:391)
+19:20:45.937 INFO     GPU telemetry export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc1/gpu_telemetry_export.jsonl (jsonl_writer.py:56)
+19:20:45.945 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller.py:391)
+19:20:45.948 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:128)
+19:20:45.948 INFO     OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (records_manager.py:216)
+19:20:45.948 INFO     Record metrics export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc1/profile_export.jsonl (record_export_results_processor.py:58)
+19:20:45.998 INFO     Registered Records Manager (id: 'records_manager') (system_controller.py:391)
+19:20:46.015 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller.py:391)
+19:20:46.028 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller.py:391)
+19:20:46.069 INFO     Registered Record Processor (id: 'record_processor_cc9213cf') (system_controller.py:391)
+19:20:46.150 INFO     Registered Worker (id: 'worker_ce01d5a6') (system_controller.py:391)
+19:20:46.407 INFO     AIPerf System is CONFIGURING (system_controller.py:280)
+19:20:46.407 INFO     Configuring all services to start profiling (system_controller.py:293)
+19:20:46.408 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:77)
+19:20:46.408 INFO     Waiting for dataset to be configured before configuring timing (manager.py:122)
+19:20:46.408 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:139)
+19:20:46.421 INFO     Server Metrics: Capturing baseline metrics... (manager.py:160)
+19:20:46.429 WARNING  GPU Telemetry: http://localhost:9400/metrics is not reachable (manager.py:243)
+19:20:46.430 WARNING  GPU Telemetry: http://localhost:9401/metrics is not reachable (manager.py:243)
+19:20:46.431 INFO     DCGM telemetry skipped: no DCGM endpoints reachable (system_controller.py:505)
+19:20:46.469 INFO     Skipping unsupported summary metric: http_request_size_bytes (data_collector.py:300)
+19:20:46.469 INFO     Skipping unsupported summary metric: http_response_size_bytes (data_collector.py:300)
+19:20:46.470 INFO     Server metrics enabled - 1/1 endpoint(s) reachable. (system_controller.py:531)
+19:20:47.346 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:20:47.346 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:20:47.355 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:20:47.355 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:20:47.357 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:20:47.369 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:20:47.433 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:20:47.440 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:20:47.443 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:20:47.450 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:20:47.505 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:20:47.508 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:20:47.562 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:20:47.566 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:20:50.359 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:20:50.407 INFO     Initialized tokenizers: {'gemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/Gemma-4-26B-A4B-NVFP4'}} in 4.00 seconds (inference_result_parser.py:100)
+19:20:50.438 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:20:50.476 INFO     Tokenizer(s) configured in 4.07 seconds (dataset_manager.py:143)
+19:20:50.477 INFO     Configuring dataset for dataset_manager (dataset_manager.py:149)
+19:20:50.866 INFO     Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_69cb9a191016/dataset.dat) (memory_map_utils.py:141)
+19:20:50.867 INFO     Data file finalized: 10 conversations, 0.03 MB (memory_map_utils.py:245)
+19:20:50.868 INFO     Index file created: /tmp/aiperf_mmap_69cb9a191016/index.dat (memory_map_utils.py:252)
+19:20:50.868 INFO     Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_69cb9a191016/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_69cb9a191016/index.dat') conversation_count=10 total_size_bytes=29770 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0 (dataset_manager.py:479)
+19:20:50.868 INFO     sampling strategy: sequential, unique conversations: 10, unique turn count: 10 (dataset_manager.py:497)
+19:20:50.869 INFO     Generating inputs.json file at /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc1/inputs.json (dataset_manager.py:337)
+19:20:50.871 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:165)
+19:20:50.871 INFO     inputs.json file generated in 0.00 seconds (dataset_manager.py:356)
+19:20:50.982 INFO     Dataset client initialized and freed 10 conversations from memory (dataset_manager.py:185)
+19:20:50.983 INFO     Dataset configured in 0.51 seconds (dataset_manager.py:156)
+19:20:50.983 INFO     All services configured in 4.58 seconds (system_controller.py:304)
+19:20:50.983 INFO     AIPerf System is CONFIGURED (system_controller.py:282)
+19:20:50.984 INFO     Server Metrics: Started 1 collector(s) successfully (manager.py:228)
+19:20:50.985 INFO     All services started profiling successfully (system_controller.py:326)
+19:20:50.985 INFO     AIPerf System is PROFILING (system_controller.py:284)
+19:20:50.986 INFO     Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None (request_rate.py:114)
+19:20:50.987 NOTICE   Phase profiling started | target: 10 requests (runner.py:376)
+19:20:50.987 INFO     Credit phase start: profiling (records_manager.py:606)
+19:23:05.224 NOTICE   Phase profiling sending complete | sent=10, completed=9, in_flight=1 | sessions: sent=10, completed=9 (runner.py:615)
+19:23:05.225 INFO     Sent 10 requests. Waiting for all to complete... (records_manager.py:622)
+19:23:21.708 NOTICE   Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=150.72s (runner.py:693)
+19:23:21.708 NOTICE   All credits completed (phase_orchestrator.py:180)
+19:23:21.709 INFO     Received credits complete from 'timing_manager' (system_controller.py:426)
+19:23:21.709 INFO     Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784488850987008141, sent_end_ns=1784488985224191113, requests_end_ns=1784489001708224364, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0) (records_manager.py:648)
+19:23:21.709 NOTICE   All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)... (records_manager.py:653)
+19:23:21.709 INFO     All credits complete, please wait for the results to be processed... (records_manager.py:677)
+19:23:21.736 INFO     Processed 10 valid requests and 0 errors (10 total). (records_manager.py:383)
+19:23:21.736 INFO     Received all records, processing now... (records_manager.py:389)
+19:23:21.737 INFO     Server Metrics: Profiling complete, capturing final metrics... (manager.py:258)
+19:23:21.738 INFO     Waiting 2.0s for server metrics flush period... (records_manager.py:439)
+19:23:23.709 INFO     Processing records results... (records_manager.py:937)
+19:23:23.718 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:23:23.718 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:23:23.732 INFO     _finalize_and_process_results completed (records_manager.py:446)
+19:23:23.735 INFO     All results received, initiating shutdown (system_controller.py:778)
+19:23:24.337 INFO     Exporting all records (exporter_manager.py:62)
+19:23:24.406 INFO     Exporting console data (exporter_manager.py:134)
+
+
+                                    NVIDIA AIPerf | LLM Metrics                                     
+┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┓
+┃        Metric ┃       avg ┃       min ┃       max ┃       p99 ┃       p90 ┃       p50 ┃      std ┃
+┡━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━┩
+│ Time to First │     77.49 │     69.08 │    134.64 │    129.25 │     80.79 │     71.22 │    19.13 │
+│    Token (ms) │           │           │           │           │           │           │          │
+│       Time to │      9.63 │      9.54 │      9.74 │      9.73 │      9.71 │      9.64 │     0.06 │
+│  Second Token │           │           │           │           │           │           │          │
+│          (ms) │           │           │           │           │           │           │          │
+│ Time to First │  8,071.61 │  6,369.37 │  9,689.80 │  9,647.83 │  9,270.15 │  8,213.21 │ 1,038.34 │
+│  Output Token │           │           │           │           │           │           │          │
+│          (ms) │           │           │           │           │           │           │          │
+│       Request │ 15,044.14 │ 12,775.70 │ 17,342.60 │ 17,336.66 │ 17,283.15 │ 14,839.36 │ 1,706.88 │
+│  Latency (ms) │           │           │           │           │           │           │          │
+│   Inter Token │      9.61 │      9.60 │      9.63 │      9.63 │      9.62 │      9.61 │     0.01 │
+│  Latency (ms) │           │           │           │           │           │           │          │
+│  Output Token │    104.05 │    103.83 │    104.18 │    104.18 │    104.18 │    104.08 │     0.11 │
+│    Throughput │           │           │           │           │           │           │          │
+│      Per User │           │           │           │           │           │           │          │
+│ (tokens/sec/… │           │           │           │           │           │           │          │
+│    E2E Output │    103.58 │    103.04 │    103.72 │    103.72 │    103.72 │    103.69 │     0.20 │
+│         Token │           │           │           │           │           │           │          │
+│    Throughput │           │           │           │           │           │           │          │
+│ (tokens/sec/… │           │           │           │           │           │           │          │
+│        Output │  1,558.30 │  1,322.00 │  1,798.00 │  1,797.46 │  1,792.60 │  1,537.00 │   176.63 │
+│      Sequence │           │           │           │           │           │           │          │
+│        Length │           │           │           │           │           │           │          │
+│      (tokens) │           │           │           │           │           │           │          │
+│         Input │    550.00 │    550.00 │    550.00 │    550.00 │    550.00 │    550.00 │     0.00 │
+│      Sequence │           │           │           │           │           │           │          │
+│        Length │           │           │           │           │           │           │          │
+│      (tokens) │           │           │           │           │           │           │          │
+│  Output Token │    103.41 │       N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│    Throughput │           │           │           │           │           │           │          │
+│  (tokens/sec) │           │           │           │           │           │           │          │
+│       Request │      0.07 │       N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│    Throughput │           │           │           │           │           │           │          │
+│ (requests/se… │           │           │           │           │           │           │          │
+│ Request Count │     10.00 │       N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│    (requests) │           │           │           │           │           │           │          │
+└───────────────┴───────────┴───────────┴───────────┴───────────┴───────────┴───────────┴──────────┘
+
+
+No GPU telemetry data collected during the benchmarking run.
+
+CLI Command: aiperf profile --model 'gemma-26B' --tokenizer 'nvidia/Gemma-4-26B-A4B-NVFP4' 
+--streaming --endpoint-type 'chat' --extra-inputs 
+'{"chat_template_kwargs":{"enable_thinking":true}}' --url 'http://localhost:8000' --request-count 10
+--random-seed 42 --concurrency 1 --concurrency-min 1 --artifact-dir 
+'/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc1' --ui 
+None --api-key '<redacted>'
+Benchmark Duration: 150.69 sec
+CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc1/profile
+_export_aiperf.csv
+JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc1/profile
+_export_aiperf.json
+Server Metrics CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc1/server_
+metrics_export.csv
+Server Metrics JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc1/server_
+metrics_export.json
+Log File: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc1/logs/ai
+perf.log
+
+19:23:25.395 INFO     Starting AIPerf System (_single_run.py:64)
+19:23:25.402 INFO     [OK] Tokenizer nvidia/Gemma-4-26B-A4B-NVFP4 detected (tokenizer_display.py:297)
+19:23:25.402 INFO     1 tokenizer validated | 0.0s (tokenizer_display.py:306)
+19:23:25.402 INFO     HF cache hit (skipping prefetch): ['nvidia/Gemma-4-26B-A4B-NVFP4'] (tokenizer_validator.py:99)
+19:23:25.604 INFO     Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager') (system_controller.py:391)
+19:23:25.605 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller.py:391)
+19:23:25.607 INFO     Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics'] (manager.py:75)
+19:23:25.614 INFO     GPU telemetry export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5/gpu_telemetry_export.jsonl (jsonl_writer.py:56)
+19:23:25.617 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller.py:391)
+19:23:25.625 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:128)
+19:23:25.625 INFO     OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (records_manager.py:216)
+19:23:25.626 INFO     Record metrics export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5/profile_export.jsonl (record_export_results_processor.py:58)
+19:23:25.675 INFO     Registered Records Manager (id: 'records_manager') (system_controller.py:391)
+19:23:25.692 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller.py:391)
+19:23:25.751 INFO     Registered Record Processor (id: 'record_processor_ba7c7f94') (system_controller.py:391)
+19:23:25.807 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller.py:391)
+19:23:25.837 INFO     Registered Worker (id: 'worker_4d5f98a9') (system_controller.py:391)
+19:23:25.851 INFO     Registered Worker (id: 'worker_5a003598') (system_controller.py:391)
+19:23:25.852 INFO     Registered Worker (id: 'worker_c4116630') (system_controller.py:391)
+19:23:25.856 INFO     Registered Worker (id: 'worker_1944a815') (system_controller.py:391)
+19:23:25.856 INFO     Registered Worker (id: 'worker_63b751e7') (system_controller.py:391)
+19:23:26.084 INFO     AIPerf System is CONFIGURING (system_controller.py:280)
+19:23:26.084 INFO     Configuring all services to start profiling (system_controller.py:293)
+19:23:26.085 INFO     Waiting for dataset to be configured before configuring timing (manager.py:122)
+19:23:26.086 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:139)
+19:23:26.086 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:77)
+19:23:26.098 INFO     Server Metrics: Capturing baseline metrics... (manager.py:160)
+19:23:26.110 WARNING  GPU Telemetry: http://localhost:9400/metrics is not reachable (manager.py:243)
+19:23:26.111 WARNING  GPU Telemetry: http://localhost:9401/metrics is not reachable (manager.py:243)
+19:23:26.112 INFO     DCGM telemetry skipped: no DCGM endpoints reachable (system_controller.py:505)
+19:23:26.117 INFO     Skipping unsupported summary metric: http_request_size_bytes (data_collector.py:300)
+19:23:26.117 INFO     Skipping unsupported summary metric: http_response_size_bytes (data_collector.py:300)
+19:23:26.119 INFO     Server metrics enabled - 1/1 endpoint(s) reachable. (system_controller.py:531)
+19:23:27.105 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:23:27.116 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:23:27.137 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:23:27.147 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:23:27.193 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:23:27.194 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:23:27.204 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:23:27.220 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:23:27.220 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:23:27.230 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:23:27.262 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:23:27.286 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:23:27.321 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:23:27.340 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:23:30.091 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:23:30.135 INFO     Tokenizer(s) configured in 4.05 seconds (dataset_manager.py:143)
+19:23:30.135 INFO     Configuring dataset for dataset_manager (dataset_manager.py:149)
+19:23:30.524 INFO     Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_b13ac76d2262/dataset.dat) (memory_map_utils.py:141)
+19:23:30.525 INFO     Data file finalized: 10 conversations, 0.03 MB (memory_map_utils.py:245)
+19:23:30.526 INFO     Index file created: /tmp/aiperf_mmap_b13ac76d2262/index.dat (memory_map_utils.py:252)
+19:23:30.526 INFO     Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_b13ac76d2262/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_b13ac76d2262/index.dat') conversation_count=10 total_size_bytes=29770 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0 (dataset_manager.py:479)
+19:23:30.526 INFO     sampling strategy: sequential, unique conversations: 10, unique turn count: 10 (dataset_manager.py:497)
+19:23:30.526 INFO     Generating inputs.json file at /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5/inputs.json (dataset_manager.py:337)
+19:23:30.528 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:165)
+19:23:30.529 INFO     inputs.json file generated in 0.00 seconds (dataset_manager.py:356)
+19:23:30.567 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:23:30.610 INFO     Initialized tokenizers: {'gemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/Gemma-4-26B-A4B-NVFP4'}} in 4.52 seconds (inference_result_parser.py:100)
+19:23:30.638 INFO     Dataset client initialized and freed 10 conversations from memory (dataset_manager.py:185)
+19:23:30.638 INFO     Dataset configured in 0.50 seconds (dataset_manager.py:156)
+19:23:30.639 INFO     All services configured in 4.55 seconds (system_controller.py:304)
+19:23:30.639 INFO     AIPerf System is CONFIGURED (system_controller.py:282)
+19:23:30.640 INFO     Server Metrics: Started 1 collector(s) successfully (manager.py:228)
+19:23:30.641 INFO     All services started profiling successfully (system_controller.py:326)
+19:23:30.641 INFO     AIPerf System is PROFILING (system_controller.py:284)
+19:23:30.642 INFO     Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None (request_rate.py:114)
+19:23:30.643 NOTICE   Phase profiling started | target: 10 requests (runner.py:376)
+19:23:30.643 INFO     Credit phase start: profiling (records_manager.py:606)
+19:24:52.801 NOTICE   Phase profiling sending complete | sent=10, completed=5, in_flight=5 | sessions: sent=10, completed=5 (runner.py:615)
+19:24:52.802 INFO     Sent 10 requests. Waiting for all to complete... (records_manager.py:622)
+19:26:28.014 NOTICE   Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=177.37s (runner.py:693)
+19:26:28.014 NOTICE   All credits completed (phase_orchestrator.py:180)
+19:26:28.015 INFO     Received credits complete from 'timing_manager' (system_controller.py:426)
+19:26:28.015 INFO     Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784489010643079063, sent_end_ns=1784489092801356323, requests_end_ns=1784489188014427990, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0) (records_manager.py:648)
+19:26:28.015 NOTICE   All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)... (records_manager.py:653)
+19:26:28.015 INFO     All credits complete, please wait for the results to be processed... (records_manager.py:677)
+19:26:28.043 INFO     Processed 10 valid requests and 0 errors (10 total). (records_manager.py:383)
+19:26:28.043 INFO     Received all records, processing now... (records_manager.py:389)
+19:26:28.044 INFO     Server Metrics: Profiling complete, capturing final metrics... (manager.py:258)
+19:26:28.044 INFO     Waiting 2.0s for server metrics flush period... (records_manager.py:439)
+19:26:30.015 INFO     Processing records results... (records_manager.py:937)
+19:26:30.023 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:26:30.023 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:26:30.040 INFO     _finalize_and_process_results completed (records_manager.py:446)
+19:26:30.045 INFO     All results received, initiating shutdown (system_controller.py:778)
+19:26:30.649 INFO     Exporting all records (exporter_manager.py:62)
+19:26:30.725 INFO     Exporting console data (exporter_manager.py:134)
+
+
+                                    NVIDIA AIPerf | LLM Metrics                                     
+┏━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃     Metric ┃       avg ┃       min ┃        max ┃        p99 ┃       p90 ┃       p50 ┃       std ┃
+┡━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│    Time to │ 54,720.57 │     83.47 │  84,740.18 │  84,359.23 │ 80,930.67 │ 67,183.66 │ 28,791.10 │
+│      First │           │           │            │            │           │           │           │
+│ Token (ms) │           │           │            │            │           │           │           │
+│    Time to │      9.27 │      7.64 │       9.53 │       9.52 │      9.51 │      9.45 │      0.55 │
+│     Second │           │           │            │            │           │           │           │
+│ Token (ms) │           │           │            │            │           │           │           │
+│    Time to │ 64,794.16 │  6,706.51 │  96,221.35 │  95,751.37 │ 91,521.53 │ 80,090.90 │ 30,258.80 │
+│      First │           │           │            │            │           │           │           │
+│     Output │           │           │            │            │           │           │           │
+│ Token (ms) │           │           │            │            │           │           │           │
+│    Request │ 72,384.12 │ 13,527.46 │ 100,959.61 │ 100,766.12 │ 99,024.65 │ 88,403.21 │ 30,067.63 │
+│    Latency │           │           │            │            │           │           │           │
+│       (ms) │           │           │            │            │           │           │           │
+│      Inter │      9.61 │      9.60 │       9.66 │       9.66 │      9.62 │      9.61 │      0.02 │
+│      Token │           │           │            │            │           │           │           │
+│    Latency │           │           │            │            │           │           │           │
+│       (ms) │           │           │            │            │           │           │           │
+│     Output │    104.06 │    103.48 │     104.22 │     104.21 │    104.21 │    104.09 │      0.20 │
+│      Token │           │           │            │            │           │           │           │
+│ Throughput │           │           │            │            │           │           │           │
+│   Per User │           │           │            │            │           │           │           │
+│ (tokens/s… │           │           │            │            │           │           │           │
+│ E2E Output │     34.94 │     14.85 │     103.64 │      99.41 │     61.35 │     24.20 │     26.01 │
+│      Token │           │           │            │            │           │           │           │
+│ Throughput │           │           │            │            │           │           │           │
+│ (tokens/s… │           │           │            │            │           │           │           │
+│     Output │  1,838.00 │  1,402.00 │   3,345.00 │   3,215.40 │  2,049.00 │  1,735.00 │    525.80 │
+│   Sequence │           │           │            │            │           │           │           │
+│     Length │           │           │            │            │           │           │           │
+│   (tokens) │           │           │            │            │           │           │           │
+│      Input │    550.00 │    550.00 │     550.00 │     550.00 │    550.00 │    550.00 │      0.00 │
+│   Sequence │           │           │            │            │           │           │           │
+│     Length │           │           │            │            │           │           │           │
+│   (tokens) │           │           │            │            │           │           │           │
+│     Output │    103.64 │       N/A │        N/A │        N/A │       N/A │       N/A │       N/A │
+│      Token │           │           │            │            │           │           │           │
+│ Throughput │           │           │            │            │           │           │           │
+│ (tokens/s… │           │           │            │            │           │           │           │
+│    Request │      0.06 │       N/A │        N/A │        N/A │       N/A │       N/A │       N/A │
+│ Throughput │           │           │            │            │           │           │           │
+│ (requests… │           │           │            │            │           │           │           │
+│    Request │     10.00 │       N/A │        N/A │        N/A │       N/A │       N/A │       N/A │
+│      Count │           │           │            │            │           │           │           │
+│ (requests) │           │           │            │            │           │           │           │
+└────────────┴───────────┴───────────┴────────────┴────────────┴───────────┴───────────┴───────────┘
+
+
+No GPU telemetry data collected during the benchmarking run.
+
+CLI Command: aiperf profile --model 'gemma-26B' --tokenizer 'nvidia/Gemma-4-26B-A4B-NVFP4' 
+--streaming --endpoint-type 'chat' --extra-inputs 
+'{"chat_template_kwargs":{"enable_thinking":true}}' --url 'http://localhost:8000' --request-count 10
+--random-seed 42 --concurrency 5 --concurrency-min 5 --artifact-dir 
+'/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5' --ui 
+None --api-key '<redacted>'
+Benchmark Duration: 177.34 sec
+CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5/profile
+_export_aiperf.csv
+JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5/profile
+_export_aiperf.json
+Server Metrics CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5/server_
+metrics_export.csv
+Server Metrics JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5/server_
+metrics_export.json
+Log File: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/gemma/conc5/logs/ai
+perf.log
+
+Stopping regular vLLM for Gemma 4...
+ Container serve-gemma-docker-vllm-1 Stopping 
+ Container serve-gemma-docker-vllm-1 Stopped 
+ Container serve-gemma-docker-vllm-1 Removing 
+ Container serve-gemma-docker-vllm-1 Removed 
+ Network serve-gemma-docker_default Removing 
+ Network serve-gemma-docker_default Removed 
+Stopping Compose and Kubernetes inference workloads...
+Starting Dynamo disaggregated serving for Gemma 4...
+persistentvolumeclaim/huggingface-cache unchanged
+dynamographdeployment.nvidia.com/gemma-disagg created
+dynamographdeployment.nvidia.com/gemma-disagg condition met
+Dynamo Gemma 4 is ready.
+0, NVIDIA L40S, 44311 MiB, 46068 MiB, 0 %
+1, NVIDIA L40S, 44311 MiB, 46068 MiB, 0 %
+19:29:11.145 INFO     Starting AIPerf System (_single_run.py:64)
+19:29:11.151 INFO     [OK] Tokenizer nvidia/Gemma-4-26B-A4B-NVFP4 detected (tokenizer_display.py:297)
+19:29:11.151 INFO     1 tokenizer validated | 0.0s (tokenizer_display.py:306)
+19:29:11.151 INFO     HF cache hit (skipping prefetch): ['nvidia/Gemma-4-26B-A4B-NVFP4'] (tokenizer_validator.py:99)
+19:29:11.353 INFO     Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager') (system_controller.py:391)
+19:29:11.355 INFO     Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics'] (manager.py:75)
+19:29:11.358 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller.py:391)
+19:29:11.363 INFO     GPU telemetry export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc1/gpu_telemetry_export.jsonl (jsonl_writer.py:56)
+19:29:11.370 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller.py:391)
+19:29:11.373 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:128)
+19:29:11.374 INFO     OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (records_manager.py:216)
+19:29:11.374 INFO     Record metrics export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc1/profile_export.jsonl (record_export_results_processor.py:58)
+19:29:11.426 INFO     Registered Records Manager (id: 'records_manager') (system_controller.py:391)
+19:29:11.441 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller.py:391)
+19:29:11.483 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller.py:391)
+19:29:11.492 INFO     Registered Record Processor (id: 'record_processor_679185dd') (system_controller.py:391)
+19:29:11.579 INFO     Registered Worker (id: 'worker_189b88cb') (system_controller.py:391)
+19:29:11.833 INFO     AIPerf System is CONFIGURING (system_controller.py:280)
+19:29:11.833 INFO     Configuring all services to start profiling (system_controller.py:293)
+19:29:11.834 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:77)
+19:29:11.834 INFO     Waiting for dataset to be configured before configuring timing (manager.py:122)
+19:29:11.834 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:139)
+19:29:11.841 INFO     Server Metrics: Capturing baseline metrics... (manager.py:160)
+19:29:11.852 WARNING  GPU Telemetry: http://localhost:9400/metrics is not reachable (manager.py:243)
+19:29:11.853 WARNING  GPU Telemetry: http://localhost:9401/metrics is not reachable (manager.py:243)
+19:29:11.854 INFO     DCGM telemetry skipped: no DCGM endpoints reachable (system_controller.py:505)
+19:29:11.859 INFO     Server metrics enabled - 1/1 endpoint(s) reachable. (system_controller.py:531)
+19:29:12.757 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:29:12.767 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:29:12.770 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:29:12.770 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:29:12.780 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:29:12.841 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:29:12.841 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:29:12.852 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:29:12.852 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:29:12.864 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:29:12.911 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:29:12.931 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:29:12.970 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:29:12.989 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:29:15.662 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:29:15.710 INFO     Initialized tokenizers: {'gemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/Gemma-4-26B-A4B-NVFP4'}} in 3.88 seconds (inference_result_parser.py:100)
+19:29:16.434 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:29:16.483 INFO     Tokenizer(s) configured in 4.65 seconds (dataset_manager.py:143)
+19:29:16.483 INFO     Configuring dataset for dataset_manager (dataset_manager.py:149)
+19:29:16.877 INFO     Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_555335b4e6be/dataset.dat) (memory_map_utils.py:141)
+19:29:16.879 INFO     Data file finalized: 10 conversations, 0.03 MB (memory_map_utils.py:245)
+19:29:16.880 INFO     Index file created: /tmp/aiperf_mmap_555335b4e6be/index.dat (memory_map_utils.py:252)
+19:29:16.880 INFO     Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_555335b4e6be/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_555335b4e6be/index.dat') conversation_count=10 total_size_bytes=29770 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0 (dataset_manager.py:479)
+19:29:16.880 INFO     sampling strategy: sequential, unique conversations: 10, unique turn count: 10 (dataset_manager.py:497)
+19:29:16.881 INFO     Generating inputs.json file at /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc1/inputs.json (dataset_manager.py:337)
+19:29:16.883 INFO     inputs.json file generated in 0.00 seconds (dataset_manager.py:356)
+19:29:16.883 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:165)
+19:29:16.999 INFO     Dataset client initialized and freed 10 conversations from memory (dataset_manager.py:185)
+19:29:17.000 INFO     Dataset configured in 0.52 seconds (dataset_manager.py:156)
+19:29:17.000 INFO     All services configured in 5.17 seconds (system_controller.py:304)
+19:29:17.001 INFO     AIPerf System is CONFIGURED (system_controller.py:282)
+19:29:17.001 INFO     Server Metrics: Started 1 collector(s) successfully (manager.py:228)
+19:29:17.002 INFO     All services started profiling successfully (system_controller.py:326)
+19:29:17.002 INFO     AIPerf System is PROFILING (system_controller.py:284)
+19:29:17.004 INFO     Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None (request_rate.py:114)
+19:29:17.005 NOTICE   Phase profiling started | target: 10 requests (runner.py:376)
+19:29:17.005 INFO     Credit phase start: profiling (records_manager.py:606)
+19:31:46.651 NOTICE   Phase profiling sending complete | sent=10, completed=9, in_flight=1 | sessions: sent=10, completed=9 (runner.py:615)
+19:31:46.652 INFO     Sent 10 requests. Waiting for all to complete... (records_manager.py:622)
+19:32:08.711 NOTICE   Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=171.71s (runner.py:693)
+19:32:08.712 NOTICE   All credits completed (phase_orchestrator.py:180)
+19:32:08.712 INFO     Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784489357005037564, sent_end_ns=1784489506651445608, requests_end_ns=1784489528711338428, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0) (records_manager.py:648)
+19:32:08.712 INFO     Received credits complete from 'timing_manager' (system_controller.py:426)
+19:32:08.712 NOTICE   All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)... (records_manager.py:653)
+19:32:08.712 INFO     All credits complete, please wait for the results to be processed... (records_manager.py:677)
+19:32:08.812 INFO     Processed 10 valid requests and 0 errors (10 total). (records_manager.py:383)
+19:32:08.813 INFO     Received all records, processing now... (records_manager.py:389)
+19:32:08.814 INFO     Waiting 1.9s for server metrics flush period... (records_manager.py:439)
+19:32:08.814 INFO     Server Metrics: Profiling complete, capturing final metrics... (manager.py:258)
+19:32:10.711 INFO     Processing records results... (records_manager.py:937)
+19:32:10.720 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:32:10.720 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:32:10.746 INFO     _finalize_and_process_results completed (records_manager.py:446)
+19:32:10.751 INFO     All results received, initiating shutdown (system_controller.py:778)
+19:32:11.356 INFO     Exporting all records (exporter_manager.py:62)
+19:32:11.434 INFO     Exporting console data (exporter_manager.py:134)
+
+
+                                    NVIDIA AIPerf | LLM Metrics                                     
+┏━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┓
+┃        Metric ┃       avg ┃       min ┃       max ┃       p99 ┃       p90 ┃       p50 ┃      std ┃
+┡━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━┩
+│ Time to First │    378.20 │    294.60 │    832.67 │    790.12 │    407.18 │    326.93 │   152.72 │
+│    Token (ms) │           │           │           │           │           │           │          │
+│       Time to │      9.61 │      9.43 │      9.87 │      9.86 │      9.80 │      9.58 │     0.14 │
+│  Second Token │           │           │           │           │           │           │          │
+│          (ms) │           │           │           │           │           │           │          │
+│ Time to First │  8,540.31 │  6,461.77 │ 11,868.85 │ 11,709.95 │ 10,279.81 │  8,582.61 │ 1,637.20 │
+│  Output Token │           │           │           │           │           │           │          │
+│          (ms) │           │           │           │           │           │           │          │
+│       Request │ 17,138.15 │ 13,634.11 │ 22,025.18 │ 21,834.25 │ 20,115.93 │ 16,972.99 │ 2,541.67 │
+│  Latency (ms) │           │           │           │           │           │           │          │
+│   Inter Token │      9.66 │      9.64 │      9.68 │      9.68 │      9.67 │      9.66 │     0.01 │
+│  Latency (ms) │           │           │           │           │           │           │          │
+│  Output Token │    103.52 │    103.26 │    103.70 │    103.69 │    103.60 │    103.53 │     0.10 │
+│    Throughput │           │           │           │           │           │           │          │
+│      Per User │           │           │           │           │           │           │          │
+│ (tokens/sec/… │           │           │           │           │           │           │          │
+│    E2E Output │    101.29 │     99.02 │    101.84 │    101.84 │    101.80 │    101.51 │     0.78 │
+│         Token │           │           │           │           │           │           │          │
+│    Throughput │           │           │           │           │           │           │          │
+│ (tokens/sec/… │           │           │           │           │           │           │          │
+│        Output │  1,735.80 │  1,378.00 │  2,240.00 │  2,220.83 │  2,048.30 │  1,722.50 │   257.82 │
+│      Sequence │           │           │           │           │           │           │          │
+│        Length │           │           │           │           │           │           │          │
+│      (tokens) │           │           │           │           │           │           │          │
+│         Input │    550.00 │    550.00 │    550.00 │    550.00 │    550.00 │    550.00 │     0.00 │
+│      Sequence │           │           │           │           │           │           │          │
+│        Length │           │           │           │           │           │           │          │
+│      (tokens) │           │           │           │           │           │           │          │
+│  Output Token │    101.11 │       N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│    Throughput │           │           │           │           │           │           │          │
+│  (tokens/sec) │           │           │           │           │           │           │          │
+│       Request │      0.06 │       N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│    Throughput │           │           │           │           │           │           │          │
+│ (requests/se… │           │           │           │           │           │           │          │
+│ Request Count │     10.00 │       N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│    (requests) │           │           │           │           │           │           │          │
+└───────────────┴───────────┴───────────┴───────────┴───────────┴───────────┴───────────┴──────────┘
+
+
+No GPU telemetry data collected during the benchmarking run.
+
+CLI Command: aiperf profile --model 'gemma-26B' --tokenizer 'nvidia/Gemma-4-26B-A4B-NVFP4' 
+--streaming --endpoint-type 'chat' --extra-inputs 
+'{"chat_template_kwargs":{"enable_thinking":true}}' --url 'http://localhost:8000' --request-count 10
+--random-seed 42 --concurrency 1 --concurrency-min 1 --artifact-dir 
+'/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc1' 
+--ui None --api-key '<redacted>'
+Benchmark Duration: 171.67 sec
+CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc1/profi
+le_export_aiperf.csv
+JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc1/profi
+le_export_aiperf.json
+Server Metrics CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc1/serve
+r_metrics_export.csv
+Server Metrics JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc1/serve
+r_metrics_export.json
+Log File: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc1/logs/
+aiperf.log
+
+19:32:12.444 INFO     Starting AIPerf System (_single_run.py:64)
+19:32:12.450 INFO     [OK] Tokenizer nvidia/Gemma-4-26B-A4B-NVFP4 detected (tokenizer_display.py:297)
+19:32:12.450 INFO     1 tokenizer validated | 0.0s (tokenizer_display.py:306)
+19:32:12.451 INFO     HF cache hit (skipping prefetch): ['nvidia/Gemma-4-26B-A4B-NVFP4'] (tokenizer_validator.py:99)
+19:32:12.656 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller.py:391)
+19:32:12.660 INFO     Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics'] (manager.py:75)
+19:32:12.662 INFO     Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager') (system_controller.py:391)
+19:32:12.668 INFO     GPU telemetry export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc5/gpu_telemetry_export.jsonl (jsonl_writer.py:56)
+19:32:12.678 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller.py:391)
+19:32:12.679 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:128)
+19:32:12.679 INFO     OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (records_manager.py:216)
+19:32:12.680 INFO     Record metrics export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc5/profile_export.jsonl (record_export_results_processor.py:58)
+19:32:12.736 INFO     Registered Records Manager (id: 'records_manager') (system_controller.py:391)
+19:32:12.746 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller.py:391)
+19:32:12.856 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller.py:391)
+19:32:12.906 INFO     Registered Worker (id: 'worker_ce434487') (system_controller.py:391)
+19:32:12.906 INFO     Registered Worker (id: 'worker_791e3e3f') (system_controller.py:391)
+19:32:12.913 INFO     Registered Worker (id: 'worker_ac47ecd5') (system_controller.py:391)
+19:32:12.915 INFO     Registered Worker (id: 'worker_85bda7ba') (system_controller.py:391)
+19:32:12.919 INFO     Registered Record Processor (id: 'record_processor_3689466c') (system_controller.py:391)
+19:32:13.016 INFO     Registered Worker (id: 'worker_1c740243') (system_controller.py:391)
+19:32:13.137 INFO     AIPerf System is CONFIGURING (system_controller.py:280)
+19:32:13.137 INFO     Configuring all services to start profiling (system_controller.py:293)
+19:32:13.138 INFO     Waiting for dataset to be configured before configuring timing (manager.py:122)
+19:32:13.138 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:77)
+19:32:13.138 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:139)
+19:32:13.145 INFO     Server Metrics: Capturing baseline metrics... (manager.py:160)
+19:32:13.162 WARNING  GPU Telemetry: http://localhost:9400/metrics is not reachable (manager.py:243)
+19:32:13.163 WARNING  GPU Telemetry: http://localhost:9401/metrics is not reachable (manager.py:243)
+19:32:13.164 INFO     DCGM telemetry skipped: no DCGM endpoints reachable (system_controller.py:505)
+19:32:13.167 INFO     Server metrics enabled - 1/1 endpoint(s) reachable. (system_controller.py:531)
+19:32:14.069 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:32:14.069 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:32:14.070 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:32:14.070 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:32:14.080 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:32:14.081 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:32:14.160 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:32:14.163 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:32:14.172 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:32:14.173 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Gemma-4-26B-A4B-NVFP4/a19cfe00be84568a6867111c9a68c9c44fdcffe6/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:32:14.229 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:32:14.240 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:32:14.286 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:32:14.309 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:32:17.037 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:32:17.083 INFO     Initialized tokenizers: {'gemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/Gemma-4-26B-A4B-NVFP4'}} in 3.94 seconds (inference_result_parser.py:100)
+19:32:17.549 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/Gemma-4-26B-A4B-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:32:17.594 INFO     Tokenizer(s) configured in 4.46 seconds (dataset_manager.py:143)
+19:32:17.595 INFO     Configuring dataset for dataset_manager (dataset_manager.py:149)
+19:32:18.001 INFO     Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_af6bb4d7dfde/dataset.dat) (memory_map_utils.py:141)
+19:32:18.003 INFO     Data file finalized: 10 conversations, 0.03 MB (memory_map_utils.py:245)
+19:32:18.003 INFO     Index file created: /tmp/aiperf_mmap_af6bb4d7dfde/index.dat (memory_map_utils.py:252)
+19:32:18.003 INFO     Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_af6bb4d7dfde/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_af6bb4d7dfde/index.dat') conversation_count=10 total_size_bytes=29770 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0 (dataset_manager.py:479)
+19:32:18.003 INFO     sampling strategy: sequential, unique conversations: 10, unique turn count: 10 (dataset_manager.py:497)
+19:32:18.004 INFO     Generating inputs.json file at /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc5/inputs.json (dataset_manager.py:337)
+19:32:18.006 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:165)
+19:32:18.006 INFO     inputs.json file generated in 0.00 seconds (dataset_manager.py:356)
+19:32:18.126 INFO     Dataset client initialized and freed 10 conversations from memory (dataset_manager.py:185)
+19:32:18.126 INFO     Dataset configured in 0.53 seconds (dataset_manager.py:156)
+19:32:18.127 INFO     All services configured in 4.99 seconds (system_controller.py:304)
+19:32:18.127 INFO     AIPerf System is CONFIGURED (system_controller.py:282)
+19:32:18.128 INFO     Server Metrics: Started 1 collector(s) successfully (manager.py:228)
+19:32:18.128 INFO     All services started profiling successfully (system_controller.py:326)
+19:32:18.128 INFO     AIPerf System is PROFILING (system_controller.py:284)
+19:32:18.130 INFO     Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None (request_rate.py:114)
+19:32:18.130 NOTICE   Phase profiling started | target: 10 requests (runner.py:376)
+19:32:18.131 INFO     Credit phase start: profiling (records_manager.py:606)
+19:33:39.555 NOTICE   Phase profiling sending complete | sent=10, completed=5, in_flight=5 | sessions: sent=10, completed=5 (runner.py:615)
+19:33:39.556 INFO     Sent 10 requests. Waiting for all to complete... (records_manager.py:622)
+19:35:04.773 NOTICE   Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=166.64s (runner.py:693)
+19:35:04.774 NOTICE   All credits completed (phase_orchestrator.py:180)
+19:35:04.774 INFO     Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784489538130456116, sent_end_ns=1784489619555397207, requests_end_ns=1784489704773693102, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0) (records_manager.py:648)
+19:35:04.774 INFO     Received credits complete from 'timing_manager' (system_controller.py:426)
+19:35:04.775 NOTICE   All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)... (records_manager.py:653)
+19:35:04.775 INFO     All credits complete, please wait for the results to be processed... (records_manager.py:677)
+19:35:04.899 INFO     Processed 10 valid requests and 0 errors (10 total). (records_manager.py:383)
+19:35:04.899 INFO     Received all records, processing now... (records_manager.py:389)
+19:35:04.900 INFO     Waiting 1.9s for server metrics flush period... (records_manager.py:439)
+19:35:04.900 INFO     Server Metrics: Profiling complete, capturing final metrics... (manager.py:258)
+19:35:06.776 INFO     Processing records results... (records_manager.py:937)
+19:35:06.783 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:35:06.783 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:35:06.808 INFO     _finalize_and_process_results completed (records_manager.py:446)
+19:35:06.813 INFO     All results received, initiating shutdown (system_controller.py:778)
+19:35:07.414 INFO     Exporting all records (exporter_manager.py:62)
+19:35:07.488 INFO     Exporting console data (exporter_manager.py:134)
+
+
+                                    NVIDIA AIPerf | LLM Metrics                                     
+┏━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃       Metric ┃       avg ┃       min ┃       max ┃       p99 ┃       p90 ┃       p50 ┃       std ┃
+┡━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│      Time to │ 47,617.72 │    124.65 │ 68,175.20 │ 67,891.80 │ 65,341.23 │ 60,217.87 │ 22,393.81 │
+│  First Token │           │           │           │           │           │           │           │
+│         (ms) │           │           │           │           │           │           │           │
+│      Time to │      9.45 │      9.14 │      9.70 │      9.70 │      9.65 │      9.48 │      0.16 │
+│ Second Token │           │           │           │           │           │           │           │
+│         (ms) │           │           │           │           │           │           │           │
+│      Time to │ 55,724.49 │  8,640.06 │ 77,370.62 │ 76,889.82 │ 72,562.60 │ 68,882.94 │ 22,284.07 │
+│ First Output │           │           │           │           │           │           │           │
+│   Token (ms) │           │           │           │           │           │           │           │
+│      Request │ 64,213.15 │ 16,524.25 │ 85,507.98 │ 85,478.27 │ 85,210.91 │ 78,347.38 │ 23,457.32 │
+│ Latency (ms) │           │           │           │           │           │           │           │
+│  Inter Token │      9.66 │      9.65 │      9.69 │      9.69 │      9.68 │      9.65 │      0.01 │
+│ Latency (ms) │           │           │           │           │           │           │           │
+│ Output Token │    103.52 │    103.19 │    103.65 │    103.65 │    103.65 │    103.58 │      0.16 │
+│   Throughput │           │           │           │           │           │           │           │
+│     Per User │           │           │           │           │           │           │           │
+│ (tokens/sec… │           │           │           │           │           │           │           │
+│   E2E Output │     34.22 │     17.78 │    102.82 │     98.12 │     55.80 │     24.76 │     24.57 │
+│        Token │           │           │           │           │           │           │           │
+│   Throughput │           │           │           │           │           │           │           │
+│ (tokens/sec… │           │           │           │           │           │           │           │
+│       Output │  1,718.40 │  1,264.00 │  2,398.00 │  2,395.12 │  2,369.20 │  1,647.50 │    365.82 │
+│     Sequence │           │           │           │           │           │           │           │
+│       Length │           │           │           │           │           │           │           │
+│     (tokens) │           │           │           │           │           │           │           │
+│        Input │    550.00 │    550.00 │    550.00 │    550.00 │    550.00 │    550.00 │      0.00 │
+│     Sequence │           │           │           │           │           │           │           │
+│       Length │           │           │           │           │           │           │           │
+│     (tokens) │           │           │           │           │           │           │           │
+│ Output Token │    103.14 │       N/A │       N/A │       N/A │       N/A │       N/A │       N/A │
+│   Throughput │           │           │           │           │           │           │           │
+│ (tokens/sec) │           │           │           │           │           │           │           │
+│      Request │      0.06 │       N/A │       N/A │       N/A │       N/A │       N/A │       N/A │
+│   Throughput │           │           │           │           │           │           │           │
+│ (requests/s… │           │           │           │           │           │           │           │
+│      Request │     10.00 │       N/A │       N/A │       N/A │       N/A │       N/A │       N/A │
+│        Count │           │           │           │           │           │           │           │
+│   (requests) │           │           │           │           │           │           │           │
+└──────────────┴───────────┴───────────┴───────────┴───────────┴───────────┴───────────┴───────────┘
+
+
+No GPU telemetry data collected during the benchmarking run.
+
+CLI Command: aiperf profile --model 'gemma-26B' --tokenizer 'nvidia/Gemma-4-26B-A4B-NVFP4' 
+--streaming --endpoint-type 'chat' --extra-inputs 
+'{"chat_template_kwargs":{"enable_thinking":true}}' --url 'http://localhost:8000' --request-count 10
+--random-seed 42 --concurrency 5 --concurrency-min 5 --artifact-dir 
+'/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc5' 
+--ui None --api-key '<redacted>'
+Benchmark Duration: 166.61 sec
+CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc5/profi
+le_export_aiperf.csv
+JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc5/profi
+le_export_aiperf.json
+Server Metrics CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc5/serve
+r_metrics_export.csv
+Server Metrics JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc5/serve
+r_metrics_export.json
+Log File: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/gemma/conc5/logs/
+aiperf.log
+
+Stopping Dynamo disaggregated serving for Gemma 4...
+Stopping Kubernetes and Compose inference workloads...
+Starting regular vLLM for DiffusionGemma...
+time="2026-07-19T19:35:08Z" level=warning msg="No services to build"
+ Network serve-diffgemma-docker_default Creating 
+ Network serve-diffgemma-docker_default Created 
+ Volume serve-diffgemma-docker_huggingface-cache Creating 
+ Volume serve-diffgemma-docker_huggingface-cache Created 
+ Container serve-diffgemma-docker-vllm-1 Creating 
+ Container serve-diffgemma-docker-vllm-1 Created 
+ Container serve-diffgemma-docker-vllm-1 Starting 
+ Container serve-diffgemma-docker-vllm-1 Started 
+vLLM DiffusionGemma is ready.
+0, NVIDIA L40S, 44607 MiB, 46068 MiB, 0 %
+1, NVIDIA L40S, 3 MiB, 46068 MiB, 0 %
+19:39:24.894 INFO     Starting AIPerf System (_single_run.py:64)
+19:39:25.187 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:25.189 INFO     [OK] Tokenizer nvidia/diffusiongemma-26B-A4B-it-NVFP4 detected (tokenizer_display.py:297)
+19:39:25.189 INFO     1 tokenizer validated | 0.3s (tokenizer_display.py:306)
+19:39:25.189 INFO     Prefetching 1 tokenizer into HF cache... (tokenizer_validator.py:129)
+19:39:25.941 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+19:39:25.942 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:39:25.952 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:25.964 INFO     HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:26.111 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:39:26.121 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:26.132 INFO     HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:26.194 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:39:26.252 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:26.368 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer.json "HTTP/1.1 302 Found" (_client.py:1025)
+19:39:27.289 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:39:27.345 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:39:27.404 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/chat_template.jinja "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:39:27.414 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/chat_template.jinja "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:27.426 INFO     HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/chat_template.jinja "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:30.269 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:30.389 INFO       Cached nvidia/diffusiongemma-26B-A4B-it-NVFP4 (5.19s) (tokenizer_validator.py:146)
+19:39:30.403 INFO     1 tokenizer cached • 5.2s (tokenizer_validator.py:166)
+19:39:30.601 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller.py:391)
+19:39:30.614 INFO     Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics'] (manager.py:75)
+19:39:30.617 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller.py:391)
+19:39:30.619 INFO     Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager') (system_controller.py:391)
+19:39:30.625 INFO     GPU telemetry export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc1/gpu_telemetry_export.jsonl (jsonl_writer.py:56)
+19:39:30.633 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller.py:391)
+19:39:30.638 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:128)
+19:39:30.638 INFO     OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (records_manager.py:216)
+19:39:30.639 INFO     Record metrics export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc1/profile_export.jsonl (record_export_results_processor.py:58)
+19:39:30.683 INFO     Registered Record Processor (id: 'record_processor_2a180503') (system_controller.py:391)
+19:39:30.748 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller.py:391)
+19:39:30.778 INFO     Registered Records Manager (id: 'records_manager') (system_controller.py:391)
+19:39:30.778 INFO     Registered Worker (id: 'worker_f54d35d8') (system_controller.py:391)
+19:39:31.089 INFO     AIPerf System is CONFIGURING (system_controller.py:280)
+19:39:31.090 INFO     Configuring all services to start profiling (system_controller.py:293)
+19:39:31.091 INFO     Waiting for dataset to be configured before configuring timing (manager.py:122)
+19:39:31.091 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:77)
+19:39:31.091 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:139)
+19:39:31.103 INFO     Server Metrics: Capturing baseline metrics... (manager.py:160)
+19:39:31.108 WARNING  GPU Telemetry: http://localhost:9400/metrics is not reachable (manager.py:243)
+19:39:31.109 WARNING  GPU Telemetry: http://localhost:9401/metrics is not reachable (manager.py:243)
+19:39:31.110 INFO     DCGM telemetry skipped: no DCGM endpoints reachable (system_controller.py:505)
+19:39:31.150 INFO     Skipping unsupported summary metric: http_request_size_bytes (data_collector.py:300)
+19:39:31.150 INFO     Skipping unsupported summary metric: http_response_size_bytes (data_collector.py:300)
+19:39:31.151 INFO     Server metrics enabled - 1/1 endpoint(s) reachable. (system_controller.py:531)
+19:39:31.898 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+19:39:31.899 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:39:31.901 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:39:31.909 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:31.912 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:31.992 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:39:32.002 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:32.009 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:39:32.020 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:32.068 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:39:32.079 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:39:32.139 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:32.141 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:35.656 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:35.713 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:39:35.726 INFO     Tokenizer(s) configured in 4.63 seconds (dataset_manager.py:143)
+19:39:35.726 INFO     Configuring dataset for dataset_manager (dataset_manager.py:149)
+19:39:35.788 INFO     Initialized tokenizers: {'diffusiongemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/diffusiongemma-26B-A4B-it-NVFP4'}} in 4.70 seconds (inference_result_parser.py:100)
+19:39:36.125 INFO     Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_cdb2cd136136/dataset.dat) (memory_map_utils.py:141)
+19:39:36.127 INFO     Data file finalized: 10 conversations, 0.03 MB (memory_map_utils.py:245)
+19:39:36.127 INFO     Index file created: /tmp/aiperf_mmap_cdb2cd136136/index.dat (memory_map_utils.py:252)
+19:39:36.127 INFO     Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_cdb2cd136136/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_cdb2cd136136/index.dat') conversation_count=10 total_size_bytes=29860 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0 (dataset_manager.py:479)
+19:39:36.127 INFO     sampling strategy: sequential, unique conversations: 10, unique turn count: 10 (dataset_manager.py:497)
+19:39:36.128 INFO     Generating inputs.json file at /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc1/inputs.json (dataset_manager.py:337)
+19:39:36.130 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:165)
+19:39:36.130 INFO     inputs.json file generated in 0.00 seconds (dataset_manager.py:356)
+19:39:36.245 INFO     Dataset client initialized and freed 10 conversations from memory (dataset_manager.py:185)
+19:39:36.245 INFO     Dataset configured in 0.52 seconds (dataset_manager.py:156)
+19:39:36.246 INFO     All services configured in 5.16 seconds (system_controller.py:304)
+19:39:36.246 INFO     AIPerf System is CONFIGURED (system_controller.py:282)
+19:39:36.247 INFO     Server Metrics: Started 1 collector(s) successfully (manager.py:228)
+19:39:36.248 INFO     All services started profiling successfully (system_controller.py:326)
+19:39:36.248 INFO     AIPerf System is PROFILING (system_controller.py:284)
+19:39:36.250 INFO     Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None (request_rate.py:114)
+19:39:36.250 NOTICE   Phase profiling started | target: 10 requests (runner.py:376)
+19:39:36.251 INFO     Credit phase start: profiling (records_manager.py:606)
+19:40:05.597 NOTICE   Phase profiling sending complete | sent=10, completed=9, in_flight=1 | sessions: sent=10, completed=9 (runner.py:615)
+19:40:05.599 INFO     Sent 10 requests. Waiting for all to complete... (records_manager.py:622)
+19:40:08.133 NOTICE   Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=31.88s (runner.py:693)
+19:40:08.133 NOTICE   All credits completed (phase_orchestrator.py:180)
+19:40:08.134 INFO     Received credits complete from 'timing_manager' (system_controller.py:426)
+19:40:08.133 INFO     Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784489976250392975, sent_end_ns=1784490005597804079, requests_end_ns=1784490008132907965, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0) (records_manager.py:648)
+19:40:08.134 NOTICE   All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)... (records_manager.py:653)
+19:40:08.134 INFO     All credits complete, please wait for the results to be processed... (records_manager.py:677)
+19:40:08.139 INFO     Processed 10 valid requests and 0 errors (10 total). (records_manager.py:383)
+19:40:08.139 INFO     Received all records, processing now... (records_manager.py:389)
+19:40:08.140 INFO     Waiting 2.0s for server metrics flush period... (records_manager.py:439)
+19:40:08.140 INFO     Server Metrics: Profiling complete, capturing final metrics... (manager.py:258)
+19:40:10.134 INFO     Processing records results... (records_manager.py:937)
+19:40:10.143 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:40:10.143 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:40:10.153 INFO     _finalize_and_process_results completed (records_manager.py:446)
+19:40:10.155 INFO     All results received, initiating shutdown (system_controller.py:778)
+19:40:10.759 INFO     Exporting all records (exporter_manager.py:62)
+19:40:10.884 INFO     Exporting console data (exporter_manager.py:134)
+
+
+                                    NVIDIA AIPerf | LLM Metrics                                     
+┏━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┓
+┃                Metric ┃      avg ┃      min ┃      max ┃      p99 ┃      p90 ┃      p50 ┃    std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━┩
+│   Time to First Token │   666.02 │   363.78 │   841.34 │   837.89 │   806.84 │   689.68 │ 143.30 │
+│                  (ms) │          │          │          │          │          │          │        │
+│  Time to Second Token │   610.37 │   335.50 │   906.04 │   889.18 │   737.42 │   620.37 │ 150.76 │
+│                  (ms) │          │          │          │          │          │          │        │
+│  Time to First Output │ 1,968.36 │ 1,243.79 │ 2,623.51 │ 2,612.15 │ 2,509.91 │ 2,022.16 │ 471.99 │
+│            Token (ms) │          │          │          │          │          │          │        │
+│  Request Latency (ms) │ 3,186.24 │ 1,243.79 │ 4,379.95 │ 4,367.71 │ 4,257.55 │ 3,354.35 │ 931.98 │
+│   Inter Token Latency │     1.79 │     1.02 │     2.00 │     2.00 │     1.98 │     1.87 │   0.27 │
+│                  (ms) │          │          │          │          │          │          │        │
+│          Output Token │   580.95 │   500.79 │   984.63 │   948.09 │   619.26 │   534.79 │ 137.24 │
+│   Throughput Per User │          │          │          │          │          │          │        │
+│     (tokens/sec/user) │          │          │          │          │          │          │        │
+│      E2E Output Token │   421.75 │   349.74 │   528.67 │   522.61 │   468.15 │   405.86 │  48.96 │
+│            Throughput │          │          │          │          │          │          │        │
+│     (tokens/sec/user) │          │          │          │          │          │          │        │
+│       Output Sequence │ 1,371.00 │   435.00 │ 2,217.00 │ 2,199.36 │ 2,040.60 │ 1,342.00 │ 494.57 │
+│       Length (tokens) │          │          │          │          │          │          │        │
+│ Input Sequence Length │   550.00 │   550.00 │   550.00 │   550.00 │   550.00 │   550.00 │   0.00 │
+│              (tokens) │          │          │          │          │          │          │        │
+│          Output Token │   430.05 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+│            Throughput │          │          │          │          │          │          │        │
+│          (tokens/sec) │          │          │          │          │          │          │        │
+│    Request Throughput │     0.31 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+│        (requests/sec) │          │          │          │          │          │          │        │
+│         Request Count │    10.00 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+│            (requests) │          │          │          │          │          │          │        │
+└───────────────────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴────────┘
+
+
+No GPU telemetry data collected during the benchmarking run.
+
+CLI Command: aiperf profile --model 'diffusiongemma-26B' --tokenizer 
+'nvidia/diffusiongemma-26B-A4B-it-NVFP4' --streaming --endpoint-type 'chat' --extra-inputs 
+'{"chat_template_kwargs":{"enable_thinking":true}}' --url 'http://localhost:8000' --request-count 10
+--random-seed 42 --concurrency 1 --concurrency-min 1 --artifact-dir 
+'/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc1' 
+--ui None --api-key '<redacted>'
+Benchmark Duration: 31.88 sec
+CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc1/pro
+file_export_aiperf.csv
+JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc1/pro
+file_export_aiperf.json
+Server Metrics CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc1/ser
+ver_metrics_export.csv
+Server Metrics JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc1/ser
+ver_metrics_export.json
+Log File: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc1/log
+s/aiperf.log
+
+19:40:11.990 INFO     Starting AIPerf System (_single_run.py:64)
+19:40:11.996 INFO     [OK] Tokenizer nvidia/diffusiongemma-26B-A4B-it-NVFP4 detected (tokenizer_display.py:297)
+19:40:11.996 INFO     1 tokenizer validated | 0.0s (tokenizer_display.py:306)
+19:40:11.997 INFO     HF cache hit (skipping prefetch): ['nvidia/diffusiongemma-26B-A4B-it-NVFP4'] (tokenizer_validator.py:99)
+19:40:12.202 INFO     Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager') (system_controller.py:391)
+19:40:12.203 INFO     Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics'] (manager.py:75)
+19:40:12.204 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller.py:391)
+19:40:12.214 INFO     GPU telemetry export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc5/gpu_telemetry_export.jsonl (jsonl_writer.py:56)
+19:40:12.221 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller.py:391)
+19:40:12.226 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:128)
+19:40:12.227 INFO     OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (records_manager.py:216)
+19:40:12.227 INFO     Record metrics export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc5/profile_export.jsonl (record_export_results_processor.py:58)
+19:40:12.280 INFO     Registered Records Manager (id: 'records_manager') (system_controller.py:391)
+19:40:12.287 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller.py:391)
+19:40:12.344 INFO     Registered Record Processor (id: 'record_processor_8dee46d3') (system_controller.py:391)
+19:40:12.421 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller.py:391)
+19:40:12.425 INFO     Registered Worker (id: 'worker_dbdb555e') (system_controller.py:391)
+19:40:12.434 INFO     Registered Worker (id: 'worker_0ab4b3dc') (system_controller.py:391)
+19:40:12.434 INFO     Registered Worker (id: 'worker_8def8c8e') (system_controller.py:391)
+19:40:12.535 INFO     Registered Worker (id: 'worker_57253e28') (system_controller.py:391)
+19:40:12.555 INFO     Registered Worker (id: 'worker_ba451c02') (system_controller.py:391)
+19:40:12.680 INFO     AIPerf System is CONFIGURING (system_controller.py:280)
+19:40:12.680 INFO     Configuring all services to start profiling (system_controller.py:293)
+19:40:12.681 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:77)
+19:40:12.681 INFO     Waiting for dataset to be configured before configuring timing (manager.py:122)
+19:40:12.681 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:139)
+19:40:12.692 INFO     Server Metrics: Capturing baseline metrics... (manager.py:160)
+19:40:12.701 WARNING  GPU Telemetry: http://localhost:9400/metrics is not reachable (manager.py:243)
+19:40:12.703 WARNING  GPU Telemetry: http://localhost:9401/metrics is not reachable (manager.py:243)
+19:40:12.703 INFO     DCGM telemetry skipped: no DCGM endpoints reachable (system_controller.py:505)
+19:40:12.710 INFO     Skipping unsupported summary metric: http_request_size_bytes (data_collector.py:300)
+19:40:12.711 INFO     Skipping unsupported summary metric: http_response_size_bytes (data_collector.py:300)
+19:40:12.712 INFO     Server metrics enabled - 1/1 endpoint(s) reachable. (system_controller.py:531)
+19:40:13.643 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:40:13.644 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:40:13.654 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:40:13.696 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:40:13.697 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:40:13.706 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:40:13.731 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:40:13.741 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:40:13.789 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:40:13.800 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:40:13.802 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:40:13.861 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:40:13.920 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:40:13.982 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:40:16.640 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:40:16.680 INFO     Tokenizer(s) configured in 4.00 seconds (dataset_manager.py:143)
+19:40:16.680 INFO     Configuring dataset for dataset_manager (dataset_manager.py:149)
+19:40:17.072 INFO     Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_d7829242782d/dataset.dat) (memory_map_utils.py:141)
+19:40:17.074 INFO     Data file finalized: 10 conversations, 0.03 MB (memory_map_utils.py:245)
+19:40:17.074 INFO     Index file created: /tmp/aiperf_mmap_d7829242782d/index.dat (memory_map_utils.py:252)
+19:40:17.074 INFO     Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_d7829242782d/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_d7829242782d/index.dat') conversation_count=10 total_size_bytes=29860 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0 (dataset_manager.py:479)
+19:40:17.074 INFO     sampling strategy: sequential, unique conversations: 10, unique turn count: 10 (dataset_manager.py:497)
+19:40:17.075 INFO     Generating inputs.json file at /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc5/inputs.json (dataset_manager.py:337)
+19:40:17.077 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:165)
+19:40:17.078 INFO     inputs.json file generated in 0.00 seconds (dataset_manager.py:356)
+19:40:17.165 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:40:17.213 INFO     Initialized tokenizers: {'diffusiongemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/diffusiongemma-26B-A4B-it-NVFP4'}} in 4.53 seconds (inference_result_parser.py:100)
+19:40:17.225 INFO     Dataset client initialized and freed 10 conversations from memory (dataset_manager.py:185)
+19:40:17.225 INFO     Dataset configured in 0.54 seconds (dataset_manager.py:156)
+19:40:17.226 INFO     All services configured in 4.55 seconds (system_controller.py:304)
+19:40:17.226 INFO     AIPerf System is CONFIGURED (system_controller.py:282)
+19:40:17.227 INFO     Server Metrics: Started 1 collector(s) successfully (manager.py:228)
+19:40:17.227 INFO     All services started profiling successfully (system_controller.py:326)
+19:40:17.228 INFO     AIPerf System is PROFILING (system_controller.py:284)
+19:40:17.230 INFO     Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None (request_rate.py:114)
+19:40:17.230 NOTICE   Phase profiling started | target: 10 requests (runner.py:376)
+19:40:17.231 INFO     Credit phase start: profiling (records_manager.py:606)
+19:40:31.701 NOTICE   Phase profiling sending complete | sent=10, completed=5, in_flight=5 | sessions: sent=10, completed=5 (runner.py:615)
+19:40:31.702 INFO     Sent 10 requests. Waiting for all to complete... (records_manager.py:622)
+19:40:46.644 NOTICE   Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=29.41s (runner.py:693)
+19:40:46.645 NOTICE   All credits completed (phase_orchestrator.py:180)
+19:40:46.645 INFO     Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784490017230666399, sent_end_ns=1784490031700908848, requests_end_ns=1784490046644687995, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0) (records_manager.py:648)
+19:40:46.645 NOTICE   All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)... (records_manager.py:653)
+19:40:46.645 INFO     Received credits complete from 'timing_manager' (system_controller.py:426)
+19:40:46.645 INFO     All credits complete, please wait for the results to be processed... (records_manager.py:677)
+19:40:46.651 INFO     Processed 10 valid requests and 0 errors (10 total). (records_manager.py:383)
+19:40:46.651 INFO     Received all records, processing now... (records_manager.py:389)
+19:40:46.652 INFO     Server Metrics: Profiling complete, capturing final metrics... (manager.py:258)
+19:40:46.652 INFO     Waiting 2.0s for server metrics flush period... (records_manager.py:439)
+19:40:48.645 INFO     Processing records results... (records_manager.py:937)
+19:40:48.652 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:40:48.652 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:40:48.661 INFO     _finalize_and_process_results completed (records_manager.py:446)
+19:40:48.664 INFO     All results received, initiating shutdown (system_controller.py:778)
+19:40:49.267 INFO     Exporting all records (exporter_manager.py:62)
+19:40:49.336 INFO     Exporting console data (exporter_manager.py:134)
+
+
+                                    NVIDIA AIPerf | LLM Metrics                                     
+┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┓
+┃         Metric ┃       avg ┃      min ┃       max ┃       p99 ┃       p90 ┃       p50 ┃      std ┃
+┡━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━┩
+│  Time to First │  9,301.02 │   690.75 │ 12,803.11 │ 12,792.56 │ 12,697.69 │ 11,644.10 │ 3,963.96 │
+│     Token (ms) │           │          │           │           │           │           │          │
+│ Time to Second │    559.77 │   278.45 │    755.76 │    752.44 │    722.57 │    569.53 │   146.48 │
+│     Token (ms) │           │          │           │           │           │           │          │
+│  Time to First │ 10,472.70 │ 2,407.94 │ 14,179.35 │ 14,130.43 │ 13,690.17 │ 12,685.33 │ 3,898.98 │
+│   Output Token │           │          │           │           │           │           │          │
+│           (ms) │           │          │           │           │           │           │          │
+│        Request │ 11,532.41 │ 3,468.01 │ 14,941.82 │ 14,904.67 │ 14,570.32 │ 13,608.30 │ 3,954.56 │
+│   Latency (ms) │           │          │           │           │           │           │          │
+│    Inter Token │      1.69 │     1.13 │      1.85 │      1.85 │      1.85 │      1.75 │     0.21 │
+│   Latency (ms) │           │          │           │           │           │           │          │
+│   Output Token │    603.49 │   540.10 │    888.38 │    863.79 │    642.42 │    572.10 │    99.32 │
+│ Throughput Per │           │          │           │           │           │           │          │
+│           User │           │          │           │           │           │           │          │
+│ (tokens/sec/u… │           │          │           │           │           │           │          │
+│     E2E Output │    142.55 │    65.28 │    432.81 │    406.32 │    167.90 │    124.46 │   100.04 │
+│          Token │           │          │           │           │           │           │          │
+│     Throughput │           │          │           │           │           │           │          │
+│ (tokens/sec/u… │           │          │           │           │           │           │          │
+│         Output │  1,346.00 │   775.00 │  1,901.00 │  1,888.49 │  1,775.90 │  1,329.00 │   371.21 │
+│       Sequence │           │          │           │           │           │           │          │
+│         Length │           │          │           │           │           │           │          │
+│       (tokens) │           │          │           │           │           │           │          │
+│ Input Sequence │    550.00 │   550.00 │    550.00 │    550.00 │    550.00 │    550.00 │     0.00 │
+│         Length │           │          │           │           │           │           │          │
+│       (tokens) │           │          │           │           │           │           │          │
+│   Output Token │    457.65 │      N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│     Throughput │           │          │           │           │           │           │          │
+│   (tokens/sec) │           │          │           │           │           │           │          │
+│        Request │      0.34 │      N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│     Throughput │           │          │           │           │           │           │          │
+│ (requests/sec) │           │          │           │           │           │           │          │
+│  Request Count │     10.00 │      N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│     (requests) │           │          │           │           │           │           │          │
+└────────────────┴───────────┴──────────┴───────────┴───────────┴───────────┴───────────┴──────────┘
+
+
+No GPU telemetry data collected during the benchmarking run.
+
+CLI Command: aiperf profile --model 'diffusiongemma-26B' --tokenizer 
+'nvidia/diffusiongemma-26B-A4B-it-NVFP4' --streaming --endpoint-type 'chat' --extra-inputs 
+'{"chat_template_kwargs":{"enable_thinking":true}}' --url 'http://localhost:8000' --request-count 10
+--random-seed 42 --concurrency 5 --concurrency-min 5 --artifact-dir 
+'/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc5' 
+--ui None --api-key '<redacted>'
+Benchmark Duration: 29.41 sec
+CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc5/pro
+file_export_aiperf.csv
+JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc5/pro
+file_export_aiperf.json
+Server Metrics CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc5/ser
+ver_metrics_export.csv
+Server Metrics JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc5/ser
+ver_metrics_export.json
+Log File: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/vllm/diffgemma/conc5/log
+s/aiperf.log
+
+Stopping regular vLLM for DiffusionGemma...
+ Container serve-diffgemma-docker-vllm-1 Stopping 
+ Container serve-diffgemma-docker-vllm-1 Stopped 
+ Container serve-diffgemma-docker-vllm-1 Removing 
+ Container serve-diffgemma-docker-vllm-1 Removed 
+ Network serve-diffgemma-docker_default Removing 
+ Network serve-diffgemma-docker_default Removed 
+Stopping Compose and Kubernetes inference workloads...
+Starting Dynamo disaggregated serving for DiffusionGemma...
+persistentvolumeclaim/huggingface-cache unchanged
+dynamographdeployment.nvidia.com/diffgemma-disagg created
+dynamographdeployment.nvidia.com/diffgemma-disagg condition met
+Dynamo DiffusionGemma is ready.
+0, NVIDIA L40S, 44607 MiB, 46068 MiB, 0 %
+1, NVIDIA L40S, 44607 MiB, 46068 MiB, 0 %
+19:42:40.024 INFO     Starting AIPerf System (_single_run.py:64)
+19:42:40.031 INFO     [OK] Tokenizer nvidia/diffusiongemma-26B-A4B-it-NVFP4 detected (tokenizer_display.py:297)
+19:42:40.031 INFO     1 tokenizer validated | 0.0s (tokenizer_display.py:306)
+19:42:40.031 INFO     HF cache hit (skipping prefetch): ['nvidia/diffusiongemma-26B-A4B-it-NVFP4'] (tokenizer_validator.py:99)
+19:42:40.218 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller.py:391)
+19:42:40.230 INFO     Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager') (system_controller.py:391)
+19:42:40.232 INFO     Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics'] (manager.py:75)
+19:42:40.236 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller.py:391)
+19:42:40.240 INFO     GPU telemetry export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc1/gpu_telemetry_export.jsonl (jsonl_writer.py:56)
+19:42:40.250 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller.py:391)
+19:42:40.251 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:128)
+19:42:40.251 INFO     OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (records_manager.py:216)
+19:42:40.252 INFO     Record metrics export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc1/profile_export.jsonl (record_export_results_processor.py:58)
+19:42:40.284 INFO     Registered Record Processor (id: 'record_processor_90228820') (system_controller.py:391)
+19:42:40.307 INFO     Registered Records Manager (id: 'records_manager') (system_controller.py:391)
+19:42:40.339 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller.py:391)
+19:42:40.368 INFO     Registered Worker (id: 'worker_ce0cab0c') (system_controller.py:391)
+19:42:40.711 INFO     AIPerf System is CONFIGURING (system_controller.py:280)
+19:42:40.711 INFO     Configuring all services to start profiling (system_controller.py:293)
+19:42:40.712 INFO     Waiting for dataset to be configured before configuring timing (manager.py:122)
+19:42:40.712 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:77)
+19:42:40.712 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:139)
+19:42:40.720 INFO     Server Metrics: Capturing baseline metrics... (manager.py:160)
+19:42:40.731 WARNING  GPU Telemetry: http://localhost:9400/metrics is not reachable (manager.py:243)
+19:42:40.732 WARNING  GPU Telemetry: http://localhost:9401/metrics is not reachable (manager.py:243)
+19:42:40.733 INFO     DCGM telemetry skipped: no DCGM endpoints reachable (system_controller.py:505)
+19:42:40.738 INFO     Server metrics enabled - 1/1 endpoint(s) reachable. (system_controller.py:531)
+19:42:41.642 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:42:41.642 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:42:41.653 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:42:41.698 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:42:41.699 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:42:41.710 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:42:41.736 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:42:41.746 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:42:41.807 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:42:41.809 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:42:41.819 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:42:41.869 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:42:41.880 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:42:41.937 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:42:44.612 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:42:44.658 INFO     Initialized tokenizers: {'diffusiongemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/diffusiongemma-26B-A4B-it-NVFP4'}} in 3.95 seconds (inference_result_parser.py:100)
+19:42:44.729 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:42:44.771 INFO     Tokenizer(s) configured in 4.06 seconds (dataset_manager.py:143)
+19:42:44.771 INFO     Configuring dataset for dataset_manager (dataset_manager.py:149)
+19:42:45.158 INFO     Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_751c541c40ca/dataset.dat) (memory_map_utils.py:141)
+19:42:45.159 INFO     Data file finalized: 10 conversations, 0.03 MB (memory_map_utils.py:245)
+19:42:45.159 INFO     Index file created: /tmp/aiperf_mmap_751c541c40ca/index.dat (memory_map_utils.py:252)
+19:42:45.160 INFO     Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_751c541c40ca/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_751c541c40ca/index.dat') conversation_count=10 total_size_bytes=29860 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0 (dataset_manager.py:479)
+19:42:45.160 INFO     sampling strategy: sequential, unique conversations: 10, unique turn count: 10 (dataset_manager.py:497)
+19:42:45.160 INFO     Generating inputs.json file at /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc1/inputs.json (dataset_manager.py:337)
+19:42:45.162 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:165)
+19:42:45.162 INFO     inputs.json file generated in 0.00 seconds (dataset_manager.py:356)
+19:42:45.269 INFO     Dataset client initialized and freed 10 conversations from memory (dataset_manager.py:185)
+19:42:45.269 INFO     Dataset configured in 0.50 seconds (dataset_manager.py:156)
+19:42:45.270 INFO     All services configured in 4.56 seconds (system_controller.py:304)
+19:42:45.270 INFO     AIPerf System is CONFIGURED (system_controller.py:282)
+19:42:45.270 INFO     Server Metrics: Started 1 collector(s) successfully (manager.py:228)
+19:42:45.271 INFO     All services started profiling successfully (system_controller.py:326)
+19:42:45.271 INFO     AIPerf System is PROFILING (system_controller.py:284)
+19:42:45.273 INFO     Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None (request_rate.py:114)
+19:42:45.273 NOTICE   Phase profiling started | target: 10 requests (runner.py:376)
+19:42:45.273 INFO     Credit phase start: profiling (records_manager.py:606)
+19:43:56.841 NOTICE   Phase profiling sending complete | sent=10, completed=9, in_flight=1 | sessions: sent=10, completed=9 (runner.py:615)
+19:43:56.842 INFO     Sent 10 requests. Waiting for all to complete... (records_manager.py:622)
+19:44:09.037 NOTICE   Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=83.76s (runner.py:693)
+19:44:09.037 NOTICE   All credits completed (phase_orchestrator.py:180)
+19:44:09.038 INFO     Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784490165273435370, sent_end_ns=1784490236841195545, requests_end_ns=1784490249037310292, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0) (records_manager.py:648)
+19:44:09.038 NOTICE   All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)... (records_manager.py:653)
+19:44:09.038 INFO     Received credits complete from 'timing_manager' (system_controller.py:426)
+19:44:09.038 INFO     All credits complete, please wait for the results to be processed... (records_manager.py:677)
+19:44:09.043 INFO     Processed 10 valid requests and 0 errors (10 total). (records_manager.py:383)
+19:44:09.043 INFO     Received all records, processing now... (records_manager.py:389)
+19:44:09.044 INFO     Server Metrics: Profiling complete, capturing final metrics... (manager.py:258)
+19:44:09.045 INFO     Waiting 2.0s for server metrics flush period... (records_manager.py:439)
+19:44:11.037 INFO     Processing records results... (records_manager.py:937)
+19:44:11.044 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:44:11.044 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:44:11.065 INFO     _finalize_and_process_results completed (records_manager.py:446)
+19:44:11.070 INFO     All results received, initiating shutdown (system_controller.py:778)
+19:44:11.673 INFO     Exporting all records (exporter_manager.py:62)
+19:44:11.751 INFO     Exporting console data (exporter_manager.py:134)
+
+
+                                    NVIDIA AIPerf | LLM Metrics                                     
+┏━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┓
+┃           Metric ┃      avg ┃      min ┃       max ┃       p99 ┃       p90 ┃      p50 ┃      std ┃
+┡━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━┩
+│    Time to First │ 2,755.64 │ 2,420.66 │  3,072.42 │  3,064.22 │  2,990.42 │ 2,751.37 │   187.88 │
+│       Token (ms) │          │          │           │           │           │          │          │
+│   Time to Second │ 1,434.34 │ 1,048.19 │  1,598.18 │  1,596.77 │  1,584.12 │ 1,533.06 │   189.43 │
+│       Token (ms) │          │          │           │           │           │          │          │
+│    Time to First │ 6,094.75 │ 4,003.22 │ 12,193.88 │ 11,715.41 │  7,409.18 │ 5,867.73 │ 2,233.06 │
+│     Output Token │          │          │           │           │           │          │          │
+│             (ms) │          │          │           │           │           │          │          │
+│  Request Latency │ 8,373.77 │ 4,078.88 │ 12,193.88 │ 12,123.46 │ 11,489.68 │ 7,491.84 │ 2,394.42 │
+│             (ms) │          │          │           │           │           │          │          │
+│      Inter Token │     4.72 │     3.40 │      5.29 │      5.28 │      5.19 │     4.83 │     0.52 │
+│     Latency (ms) │          │          │           │           │           │          │          │
+│     Output Token │   214.93 │   189.05 │    294.31 │    288.87 │    239.91 │   207.05 │    28.97 │
+│   Throughput Per │          │          │           │           │           │          │          │
+│             User │          │          │           │           │           │          │          │
+│ (tokens/sec/use… │          │          │           │           │           │          │          │
+│ E2E Output Token │   133.33 │    83.11 │    167.22 │    166.20 │    157.11 │   131.87 │    21.08 │
+│       Throughput │          │          │           │           │           │          │          │
+│ (tokens/sec/use… │          │          │           │           │           │          │          │
+│  Output Sequence │ 1,162.70 │   339.00 │  2,039.00 │  2,015.69 │  1,805.90 │   987.50 │   476.40 │
+│  Length (tokens) │          │          │           │           │           │          │          │
+│   Input Sequence │   550.00 │   550.00 │    550.00 │    550.00 │    550.00 │   550.00 │     0.00 │
+│  Length (tokens) │          │          │           │           │           │          │          │
+│     Output Token │   138.81 │      N/A │       N/A │       N/A │       N/A │      N/A │      N/A │
+│       Throughput │          │          │           │           │           │          │          │
+│     (tokens/sec) │          │          │           │           │           │          │          │
+│          Request │     0.12 │      N/A │       N/A │       N/A │       N/A │      N/A │      N/A │
+│       Throughput │          │          │           │           │           │          │          │
+│   (requests/sec) │          │          │           │           │           │          │          │
+│    Request Count │    10.00 │      N/A │       N/A │       N/A │       N/A │      N/A │      N/A │
+│       (requests) │          │          │           │           │           │          │          │
+└──────────────────┴──────────┴──────────┴───────────┴───────────┴───────────┴──────────┴──────────┘
+
+
+No GPU telemetry data collected during the benchmarking run.
+
+CLI Command: aiperf profile --model 'diffusiongemma-26B' --tokenizer 
+'nvidia/diffusiongemma-26B-A4B-it-NVFP4' --streaming --endpoint-type 'chat' --extra-inputs 
+'{"chat_template_kwargs":{"enable_thinking":true}}' --url 'http://localhost:8000' --request-count 10
+--random-seed 42 --concurrency 1 --concurrency-min 1 --artifact-dir 
+'/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc1'
+--ui None --api-key '<redacted>'
+Benchmark Duration: 83.76 sec
+CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc1/p
+rofile_export_aiperf.csv
+JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc1/p
+rofile_export_aiperf.json
+Server Metrics CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc1/s
+erver_metrics_export.csv
+Server Metrics JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc1/s
+erver_metrics_export.json
+Log File: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc1/l
+ogs/aiperf.log
+
+19:44:12.851 INFO     Starting AIPerf System (_single_run.py:64)
+19:44:12.858 INFO     [OK] Tokenizer nvidia/diffusiongemma-26B-A4B-it-NVFP4 detected (tokenizer_display.py:297)
+19:44:12.858 INFO     1 tokenizer validated | 0.0s (tokenizer_display.py:306)
+19:44:12.858 INFO     HF cache hit (skipping prefetch): ['nvidia/diffusiongemma-26B-A4B-it-NVFP4'] (tokenizer_validator.py:99)
+19:44:13.075 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller.py:391)
+19:44:13.087 INFO     Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics'] (manager.py:75)
+19:44:13.092 INFO     GPU telemetry export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc5/gpu_telemetry_export.jsonl (jsonl_writer.py:56)
+19:44:13.102 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller.py:391)
+19:44:13.103 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:128)
+19:44:13.103 INFO     OTel metrics streamer is disabled and will not be used: Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (records_manager.py:216)
+19:44:13.104 INFO     Record metrics export enabled: /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc5/profile_export.jsonl (record_export_results_processor.py:58)
+19:44:13.135 INFO     Registered Record Processor (id: 'record_processor_6f0e7484') (system_controller.py:391)
+19:44:13.156 INFO     Registered Records Manager (id: 'records_manager') (system_controller.py:391)
+19:44:13.183 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller.py:391)
+19:44:13.189 INFO     Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager') (system_controller.py:391)
+19:44:13.233 INFO     Registered Worker (id: 'worker_68369d19') (system_controller.py:391)
+19:44:13.233 INFO     Registered Worker (id: 'worker_29b0b271') (system_controller.py:391)
+19:44:13.243 INFO     Registered Worker (id: 'worker_819d413b') (system_controller.py:391)
+19:44:13.253 INFO     Registered Worker (id: 'worker_e056ab55') (system_controller.py:391)
+19:44:13.302 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller.py:391)
+19:44:13.344 INFO     Registered Worker (id: 'worker_9e47a961') (system_controller.py:391)
+19:44:13.563 INFO     AIPerf System is CONFIGURING (system_controller.py:280)
+19:44:13.563 INFO     Configuring all services to start profiling (system_controller.py:293)
+19:44:13.563 INFO     Waiting for dataset to be configured before configuring timing (manager.py:122)
+19:44:13.563 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:139)
+19:44:13.563 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:77)
+19:44:13.572 INFO     Server Metrics: Capturing baseline metrics... (manager.py:160)
+19:44:13.584 WARNING  GPU Telemetry: http://localhost:9400/metrics is not reachable (manager.py:243)
+19:44:13.586 WARNING  GPU Telemetry: http://localhost:9401/metrics is not reachable (manager.py:243)
+19:44:13.586 INFO     DCGM telemetry skipped: no DCGM endpoints reachable (system_controller.py:505)
+19:44:13.594 INFO     Server metrics enabled - 1/1 endpoint(s) reachable. (system_controller.py:531)
+19:44:14.490 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:44:14.491 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:44:14.500 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:44:14.521 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:44:14.531 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:44:14.585 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:44:14.595 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:44:14.608 INFO     HTTP Request: HEAD https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect" (_client.py:1025)
+19:44:14.608 WARNING  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads. (_http.py:951)
+19:44:14.618 INFO     HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/ec4ff3df205028f4e81c954c2227f9312b3ec2ea/tokenizer_config.json "HTTP/1.1 200 OK" (_client.py:1025)
+19:44:14.654 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:44:14.680 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+19:44:14.722 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:44:14.734 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+19:44:17.491 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:44:17.492 INFO     HTTP Request: GET https://huggingface.co/api/models/nvidia/diffusiongemma-26B-A4B-it-NVFP4 "HTTP/1.1 200 OK" (_client.py:1025)
+19:44:17.528 INFO     Initialized tokenizers: {'diffusiongemma-26B': {'class': 'GemmaTokenizer', 'name_or_path': 'nvidia/diffusiongemma-26B-A4B-it-NVFP4'}} in 3.96 seconds (inference_result_parser.py:100)
+19:44:17.536 INFO     Tokenizer(s) configured in 3.97 seconds (dataset_manager.py:143)
+19:44:17.536 INFO     Configuring dataset for dataset_manager (dataset_manager.py:149)
+19:44:17.920 INFO     Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_9f87e7cad198/dataset.dat) (memory_map_utils.py:141)
+19:44:17.921 INFO     Data file finalized: 10 conversations, 0.03 MB (memory_map_utils.py:245)
+19:44:17.922 INFO     Index file created: /tmp/aiperf_mmap_9f87e7cad198/index.dat (memory_map_utils.py:252)
+19:44:17.922 INFO     Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_9f87e7cad198/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_9f87e7cad198/index.dat') conversation_count=10 total_size_bytes=29860 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0 (dataset_manager.py:479)
+19:44:17.922 INFO     sampling strategy: sequential, unique conversations: 10, unique turn count: 10 (dataset_manager.py:497)
+19:44:17.923 INFO     Generating inputs.json file at /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc5/inputs.json (dataset_manager.py:337)
+19:44:17.925 INFO     inputs.json file generated in 0.00 seconds (dataset_manager.py:356)
+19:44:17.925 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:165)
+19:44:18.032 INFO     Dataset client initialized and freed 10 conversations from memory (dataset_manager.py:185)
+19:44:18.032 INFO     Dataset configured in 0.50 seconds (dataset_manager.py:156)
+19:44:18.033 INFO     All services configured in 4.47 seconds (system_controller.py:304)
+19:44:18.033 INFO     AIPerf System is CONFIGURED (system_controller.py:282)
+19:44:18.034 INFO     Server Metrics: Started 1 collector(s) successfully (manager.py:228)
+19:44:18.035 INFO     All services started profiling successfully (system_controller.py:326)
+19:44:18.035 INFO     AIPerf System is PROFILING (system_controller.py:284)
+19:44:18.036 INFO     Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None (request_rate.py:114)
+19:44:18.037 NOTICE   Phase profiling started | target: 10 requests (runner.py:376)
+19:44:18.037 INFO     Credit phase start: profiling (records_manager.py:606)
+19:44:43.312 WARNING  Event loop for timing_manager is taking too long to run. Overhead: 28.27ms (event_loop_monitor.py:89)
+19:44:54.735 NOTICE   Phase profiling sending complete | sent=10, completed=5, in_flight=5 | sessions: sent=10, completed=5 (runner.py:615)
+19:44:54.736 INFO     Sent 10 requests. Waiting for all to complete... (records_manager.py:622)
+19:45:26.727 NOTICE   Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=68.69s (runner.py:693)
+19:45:26.728 NOTICE   All credits completed (phase_orchestrator.py:180)
+19:45:26.728 INFO     Received credits complete from 'timing_manager' (system_controller.py:426)
+19:45:26.729 INFO     Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1784490258037170221, sent_end_ns=1784490294735065434, requests_end_ns=1784490326727640716, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=0) (records_manager.py:648)
+19:45:26.729 NOTICE   All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)... (records_manager.py:653)
+19:45:26.729 INFO     All credits complete, please wait for the results to be processed... (records_manager.py:677)
+19:45:26.734 INFO     Processed 10 valid requests and 0 errors (10 total). (records_manager.py:383)
+19:45:26.734 INFO     Received all records, processing now... (records_manager.py:389)
+19:45:26.735 INFO     Server Metrics: Profiling complete, capturing final metrics... (manager.py:258)
+19:45:26.736 INFO     Waiting 2.0s for server metrics flush period... (records_manager.py:439)
+19:45:28.729 INFO     Processing records results... (records_manager.py:937)
+19:45:28.736 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:45:28.736 INFO     Waiting for server metrics results... (system_controller.py:783)
+19:45:28.756 INFO     _finalize_and_process_results completed (records_manager.py:446)
+19:45:28.761 INFO     All results received, initiating shutdown (system_controller.py:778)
+19:45:29.364 INFO     Exporting all records (exporter_manager.py:62)
+19:45:29.441 INFO     Exporting console data (exporter_manager.py:134)
+
+
+                                    NVIDIA AIPerf | LLM Metrics                                     
+┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┓
+┃         Metric ┃       avg ┃      min ┃       max ┃       p99 ┃       p90 ┃       p50 ┃      std ┃
+┡━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━┩
+│  Time to First │ 22,708.73 │ 2,334.16 │ 31,882.42 │ 31,738.27 │ 30,440.88 │ 26,730.37 │ 9,288.69 │
+│     Token (ms) │           │          │           │           │           │           │          │
+│ Time to Second │  1,521.59 │ 1,209.41 │  1,606.61 │  1,606.09 │  1,601.46 │  1,594.30 │   150.30 │
+│     Token (ms) │           │          │           │           │           │           │          │
+│  Time to First │ 25,453.68 │ 5,476.43 │ 33,472.45 │ 33,339.09 │ 32,138.86 │ 29,563.47 │ 8,984.21 │
+│   Output Token │           │          │           │           │           │           │          │
+│           (ms) │           │          │           │           │           │           │          │
+│        Request │ 27,828.52 │ 8,137.21 │ 36,694.14 │ 36,572.27 │ 35,475.46 │ 31,936.14 │ 8,908.39 │
+│   Latency (ms) │           │          │           │           │           │           │          │
+│    Inter Token │      4.76 │     3.51 │      5.37 │      5.36 │      5.35 │      4.87 │     0.52 │
+│   Latency (ms) │           │          │           │           │           │           │          │
+│   Output Token │    213.25 │   186.34 │    284.84 │    280.46 │    241.03 │    205.48 │    27.44 │
+│ Throughput Per │           │          │           │           │           │           │          │
+│           User │           │          │           │           │           │           │          │
+│ (tokens/sec/u… │           │          │           │           │           │           │          │
+│     E2E Output │     47.53 │    14.33 │    133.46 │    128.44 │     83.25 │     37.93 │    33.07 │
+│          Token │           │          │           │           │           │           │          │
+│     Throughput │           │          │           │           │           │           │          │
+│ (tokens/sec/u… │           │          │           │           │           │           │          │
+│         Output │  1,056.90 │   457.00 │  1,568.00 │  1,545.68 │  1,344.80 │  1,074.50 │   296.59 │
+│       Sequence │           │          │           │           │           │           │          │
+│         Length │           │          │           │           │           │           │          │
+│       (tokens) │           │          │           │           │           │           │          │
+│ Input Sequence │    550.00 │   550.00 │    550.00 │    550.00 │    550.00 │    550.00 │     0.00 │
+│         Length │           │          │           │           │           │           │          │
+│       (tokens) │           │          │           │           │           │           │          │
+│   Output Token │    153.87 │      N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│     Throughput │           │          │           │           │           │           │          │
+│   (tokens/sec) │           │          │           │           │           │           │          │
+│        Request │      0.15 │      N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│     Throughput │           │          │           │           │           │           │          │
+│ (requests/sec) │           │          │           │           │           │           │          │
+│  Request Count │     10.00 │      N/A │       N/A │       N/A │       N/A │       N/A │      N/A │
+│     (requests) │           │          │           │           │           │           │          │
+└────────────────┴───────────┴──────────┴───────────┴───────────┴───────────┴───────────┴──────────┘
+
+
+No GPU telemetry data collected during the benchmarking run.
+
+CLI Command: aiperf profile --model 'diffusiongemma-26B' --tokenizer 
+'nvidia/diffusiongemma-26B-A4B-it-NVFP4' --streaming --endpoint-type 'chat' --extra-inputs 
+'{"chat_template_kwargs":{"enable_thinking":true}}' --url 'http://localhost:8000' --request-count 10
+--random-seed 42 --concurrency 5 --concurrency-min 5 --artifact-dir 
+'/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc5'
+--ui None --api-key '<redacted>'
+Benchmark Duration: 68.69 sec
+CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc5/p
+rofile_export_aiperf.csv
+JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc5/p
+rofile_export_aiperf.json
+Server Metrics CSV Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc5/s
+erver_metrics_export.csv
+Server Metrics JSON Export: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc5/s
+erver_metrics_export.json
+Log File: 
+/home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts/dynamo/diffgemma/conc5/l
+ogs/aiperf.log
+
+Stopping Dynamo disaggregated serving for DiffusionGemma...
+Wrote benchmark summary and graphs to /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts
+All benchmark runs and graphs are in /home/shadeform/NVIDIA-Brev-L40S-vLLM-DiffusionGemma/benchmarking/artifacts.

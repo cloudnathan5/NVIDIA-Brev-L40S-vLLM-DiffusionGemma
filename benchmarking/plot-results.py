@@ -140,7 +140,7 @@ def plot_comparison(rows):
             "grid.alpha": 0.8,
         }
     )
-    figure, axes = plt.subplots(2, 2, figsize=(14, 9), constrained_layout=True)
+    figure, axes = plt.subplots(2, 2, figsize=(14, 9.5))
 
     for row_index, model in enumerate(models):
         for column_index, (metric, metric_label) in enumerate(METRICS.items()):
@@ -168,13 +168,42 @@ def plot_comparison(rows):
             axis.grid(axis="x", visible=False)
             axis.spines["top"].set_visible(False)
             axis.spines["right"].set_visible(False)
-            axis.legend(frameon=False, loc="upper left")
             axis.margins(y=0.18)
 
     figure.suptitle(
         "Regular vLLM vs Dynamo Disaggregated Serving",
         fontsize=18,
         fontweight="bold",
+        y=0.985,
+    )
+    legend_handles = [
+        plt.Rectangle((0, 0), 1, 1, color=colors[engine])
+        for engine in ("vLLM", "Dynamo")
+    ]
+    figure.legend(
+        legend_handles,
+        ("vLLM", "Dynamo"),
+        loc="upper center",
+        bbox_to_anchor=(0.5, 0.95),
+        frameon=False,
+        ncol=2,
+    )
+    figure.text(
+        0.5,
+        0.018,
+        "2x L40S host | vLLM: 1 GPU | Dynamo: 2 GPUs (prefill + decode) | "
+        "10 requests | 550-token inputs | reasoning enabled | seed 42",
+        ha="center",
+        color="#555555",
+        fontsize=9,
+    )
+    figure.subplots_adjust(
+        left=0.065,
+        right=0.985,
+        top=0.865,
+        bottom=0.09,
+        hspace=0.42,
+        wspace=0.18,
     )
     figure.savefig(GRAPH_DIR / "throughput-comparison.png", dpi=180)
     figure.savefig(GRAPH_DIR / "throughput-comparison.svg")

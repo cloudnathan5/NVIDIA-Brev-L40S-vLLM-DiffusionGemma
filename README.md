@@ -80,6 +80,20 @@ preserved under `benchmarking/artifacts/archive/`. It also creates CSV and
 Markdown summaries plus PNG and SVG throughput comparison charts in
 `benchmarking/artifacts/graphs/`.
 
+The latest completed campaign is summarized in
+[`benchmark-summary.md`](benchmarking/artifacts/benchmark-summary.md), with the
+underlying values in
+[`benchmark-summary.csv`](benchmarking/artifacts/benchmark-summary.csv).
+
+![Regular vLLM versus Dynamo throughput](benchmarking/artifacts/graphs/throughput-comparison.png)
+
+For this 550-token input workload with `max-num-seqs=1`, Dynamo approximately
+matches regular vLLM on Gemma 4 but does not improve throughput. The specialized
+DiffusionGemma vLLM runtime is substantially faster than the current
+disaggregated path. Dynamo uses both L40S GPUs here, while each regular vLLM run
+uses one GPU; longer prefills and greater in-flight capacity are better suited to
+demonstrating disaggregation benefits.
+
 Use the same explicit reasoning setting for regular vLLM and Dynamo benchmarks
 so the comparison does not depend on different server defaults:
 
